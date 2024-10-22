@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리 메인 / 이벤트</title>
+
+    <!-- Link Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../assets/css/util/util.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="" style="background: linear-gradient(to right, #2e3d4e, #241d36);">
+            <div class="container-layout h-16 flex items-center justify-center">
+                <img src="../assets/images/banner/PromoBanner.svg" alt="icon">
+            </div>
+        </section>
+
+        <section class="border-b" style="background-color: rgba(112, 115, 124, 0.08);">
+            <div class="container-layout">
+                <div class="text-xs font-normal py-3 flex gap-5 justify-end" style="color: rgba(46, 47, 51, 0.88);">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">주문/배송</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-layout py-8 utility-layout">
+                <div class="flex items-center justify-between">
+                    <div class="logo overflow-hidden" style="width: 70px; height: 70px;">
+                        <img src="../assets/images/logo/Logo.svg" alt="Logo" />
+                    </div>
+
+                    <div>
+                        <div class="overflow-hidden rounded-full"
+                            style="width: 600px; background: linear-gradient(to right, #0C98E7, #B956EA, #F03964); padding: 1px; ">
+                            <div
+                                class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full">
+                                <div class="text-base font-normal">
+                                    <input type="text" placeholder="하루 10분 주님과 단 둘이">
+                                </div>
+                                <div class="pl-6 border-l" style="border-color: rgba(112, 115, 124, 0.22);">
+                                    <img src="../assets/images/icon/header/home-search.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../assets/images/icon/header/home-cart.svg" alt="icon" />
+                        </div>
+                        <div>
+                            <img src="../assets/images/icon/header/home-my-account.svg" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-b">
+            <div class="container-layout">
+                <div class="flex justify-between">
+                    <div>
+                        <ul id="header-list-category" class="flex">
+                            <!-- <li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">전체</a> </li>
+                            <li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">스페셜</a> </li>
+                            <li class="py-4 px-3.5"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">도서</a> </li> -->
+                        </ul>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <span class="text-base font-semibold">전체 카테고리</span>
+                        <img src="../assets/images/icon/header/home-hbg-menu.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="py-4 my-6">
+        <div class="container-layout">
+            <div class="flex items-center gap-2" style="color: rgba(55, 56, 60, 0.6);">
+                <div>
+                    <img src="../assets/images/icon/common/home.svg" alt="icon">
+                </div>
+                <div>
+                    <span>/</span>
+                </div>
+                <div>
+                    <span>출석체크</span>
+                </div>
+                <div>
+                    <img src="../assets/images/icon/common/down.svg" alt="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container-layout">
+            <div class="flex items-center gap-6">
+                <div>
+                    <span class="text-28-l-38 font-medium" style="color: rgba(55, 56, 60, 0.6);">이벤트</span>
+                </div>
+                
+                <div class="flex items-center w-0.5 h-6" style="background-color: rgba(217, 217, 217, 1);"></div>
+
+                <div>
+                    <span class="text-28-l-38 font-medium">출석 체크</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-8">
+        <div class="container-layout">
+            <div style="padding-bottom: 174px; background: linear-gradient(to bottom right, rgba(255, 242, 242, 1), rgba(244, 244, 244, 1), rgba(236, 252, 255, 1), rgba(255, 232, 255, 1));">
+
+                <div class="pt-14 px-40 text-center mb-3">
+                    <div style="font-size: 38px; line-height: 50px;" class="font-light">이달의</div>
+                    <div style="font-size: 43px; line-height: 58px;" class="font-bold">출석 체크</div>
+                    <div class="text-14-l-22 font-normal">
+                        바오로딸에 접속하셔서 매일 출석 도장을 찍어주세요!                        
+                    </div class="text-14-l-22 font-normal">
+                    <div>출석 횟수에 따라 할인 쿠폰을 드립니다.</div>
+                </div>
+
+                <div class="flex items-center gap-16 justify-center mt-16">
+                    <div>
+                        <div class="text-center text-sm font-medium">출석체크 10번 이상</div>
+
+                        <div class="flex mt-5 mb-7">
+                            <div style="width: 166px; height: 88px; padding-left: 14px; padding-top: 15px;" class="bg-white">
+                                <div style="font-size: 12px; line-height: 16px; color: rgba(55, 56, 60, 0.16);" class="font-normal mb-2">COUPON</div>
+                                <div class="flex items-center">
+                                    <img src="../assets/images/icon/attendance-check/c-300.svg" alt="icon">
+                                    <span class="text-11-l-14 font-normal" style="color: rgba(55, 56, 60, 0.6);">원</span>
+                                </div>
+                            </div>
+                            
+                            <div style="width: 34px; height: 88px; 
+                                border-top-left-radius: 8px;
+                                border-top-right-radius: 4px;
+                                border-bottom-right-radius: 4px;
+                                border-bottom-left-radius: 8px;
+                                background-color: white;">
+                            </div>
+                        </div>
+
+                        <div class="rounded text-13-l-18 font-semibold py-1.5 text-center text-white" style="background-color: rgba(46, 47, 51, 0.88);">쿠폰 받기</div>
+                    </div>
+
+                    <div>
+                        <div class="text-center text-sm font-medium">출석체크 20번 이상</div>
+
+                        <div class="flex mt-5 mb-7">
+                            <div style="width: 166px; height: 88px; padding-left: 14px; padding-top: 15px;" class="bg-white">
+                                <div style="font-size: 12px; line-height: 16px; color: rgba(55, 56, 60, 0.16);" class="font-normal mb-2">COUPON</div>
+                                <div class="flex items-center">
+                                    <img src="../assets/images/icon/attendance-check/c-300.svg" alt="icon">
+                                    <span class="text-11-l-14 font-normal" style="color: rgba(55, 56, 60, 0.6);">원</span>
+                                </div>
+                            </div>
+                            
+                            <div style="width: 34px; height: 88px; 
+                                border-top-left-radius: 8px;
+                                border-top-right-radius: 4px;
+                                border-bottom-right-radius: 4px;
+                                border-bottom-left-radius: 8px;
+                                background-color: white;">
+                            </div>
+                        </div>
+
+                        <div class="rounded text-13-l-18 font-semibold py-1.5 text-center text-white" style="background-color: rgba(46, 47, 51, 0.88);">쿠폰 받기</div>
+                    </div>
+
+                    <div>
+                        <div class="text-center text-sm font-medium">출석체크 100%</div>
+
+                        <div class="flex mt-5 mb-7">
+                            <div style="width: 166px; height: 88px; padding-left: 14px; padding-top: 15px;" class="bg-white">
+                                <div style="font-size: 12px; line-height: 16px; color: rgba(55, 56, 60, 0.16);" class="font-normal mb-2">COUPON</div>
+                                <div class="flex items-center">
+                                    <img src="../assets/images/icon/attendance-check/c-300.svg" alt="icon">
+                                    <span class="text-11-l-14 font-normal" style="color: rgba(55, 56, 60, 0.6);">원</span>
+                                </div>
+                            </div>
+                            
+                            <div style="width: 34px; height: 88px; 
+                                border-top-left-radius: 8px;
+                                border-top-right-radius: 4px;
+                                border-bottom-right-radius: 4px;
+                                border-bottom-left-radius: 8px;
+                                background-color: white;">
+                            </div>
+                        </div>
+
+                        <div class="rounded text-13-l-18 font-semibold py-1.5 text-center text-white" style="background-color: rgba(46, 47, 51, 0.88);">쿠폰 받기</div>
+                    </div>
+                </div>
+
+                <div class="px-40 mt-11">
+                    <div class="bg-white rounded-xl pt-16 pb-16">
+                        <div class="pt-1 text-center font-bold" style="font-size: 28px; line-height: 38px;">00</div>
+
+                        <div class="mt-20 px-16 flex flex-wrap" style="gap: 24px 20px;">
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                            <div style="width: 70px; height: 70px;" class="overflow-hidden">
+                                <img style="width: 70px; height: 70px;" src="../assets/images/icon/attendance-check/round-grey.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="px-40 mt-5">
+                    <div class="text-xs font-normal">유의사항</div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <section class="h-40"></section>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+
+</html>

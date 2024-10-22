@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카테고리 메인 / 이벤트</title>
+
+    <!-- Link Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+    <link rel="stylesheet" href="../assets/css/util/util.css">
+</head>
+<body>
+
+    <header>
+        <section class="" style="background: linear-gradient(to right, #2e3d4e, #241d36);">
+            <div class="container-layout h-16 flex items-center justify-center">
+                <img src="../assets/images/banner/PromoBanner.svg" alt="icon">
+            </div>
+        </section>
+
+        <section class="border-b" style="background-color: rgba(112, 115, 124, 0.08);">
+            <div class="container-layout">
+                <div class="text-xs font-normal py-3 flex gap-5 justify-end" style="color: rgba(46, 47, 51, 0.88);">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">주문/배송</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-layout py-8 utility-layout">
+                <div class="flex items-center justify-between">
+                    <div class="logo overflow-hidden" style="width: 70px; height: 70px;">
+                        <img src="../assets/images/logo/Logo.svg" alt="Logo" />
+                    </div>
+
+                    <div>
+                        <div class="overflow-hidden rounded-full"
+                            style="width: 600px; background: linear-gradient(to right, #0C98E7, #B956EA, #F03964); padding: 1px; ">
+                            <div
+                                class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full">
+                                <div class="text-base font-normal">
+                                    <input type="text" placeholder="하루 10분 주님과 단 둘이">
+                                </div>
+                                <div class="pl-6 border-l" style="border-color: rgba(112, 115, 124, 0.22);">
+                                    <img src="../assets/images/icon/header/home-search.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../assets/images/icon/header/home-cart.svg" alt="icon" />
+                        </div>
+                        <div>
+                            <img src="../assets/images/icon/header/home-my-account.svg" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-b">
+            <div class="container-layout">
+                <div class="flex justify-between">
+                    <div>
+                        <ul id="header-list-category" class="flex">
+                            <!-- <li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">전체</a> </li>
+                            <li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">스페셜</a> </li>
+                            <li class="py-4 px-3.5"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">도서</a> </li> -->
+                        </ul>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <span class="text-base font-semibold">전체 카테고리</span>
+                        <img src="../assets/images/icon/header/home-hbg-menu.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <section class="py-4 my-6">
+        <div class="container-layout">
+            <div class="flex items-center gap-2" style="color: rgba(55, 56, 60, 0.6);">
+                <div>
+                    <img src="../assets/images/icon/common/home.svg" alt="icon">
+                </div>
+                <div>
+                    <span>/</span>
+                </div>
+                <div>
+                    <span>이벤트</span>
+                </div>
+                <div>
+                    <img src="../assets/images/icon/common/down.svg" alt="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container-layout">
+            <div class="flex items-center gap-6">
+                <div>
+                    <span class="text-28-l-38 font-medium">이벤트</span>
+                </div>
+                
+                <div class="flex items-center w-0.5 h-6" style="background-color: rgba(217, 217, 217, 1);"></div>
+
+                <div>
+                    <span class="text-28-l-38 font-medium" style="color: rgba(55, 56, 60, 0.6);">출석 체크</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-2">
+        <div class="container-layout">
+            <div class="flex items-center gap-5">
+                <div class="flex-1">
+                    <div class="w-full h-56 rounded-lg mb-2.5" style="background-color: rgba(231, 231, 231, 1);">
+                        <img src="" alt="">
+                    </div>
+
+                    <div>
+                        <div class="flex items-center mb-1">
+                            <div class="rounded-full py-1 px-3 w-fit text-11-l-14 font-medium" style="background-color: rgba(254, 230, 198, 1);">
+                                상시
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="text-18-l-26 font-semibold">
+                            리뷰쓰고 선물 받고
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <div class="w-full h-56 rounded-lg mb-2.5" style="background-color: rgba(231, 231, 231, 1);">
+                        <img src="" alt="">
+                    </div>
+
+                    <div>
+                        <div class="flex items-center mb-1">
+                            <div class="rounded-full py-1 px-3 w-fit text-11-l-14 font-medium" style="background-color: rgba(254, 230, 198, 1);">
+                                상시
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="text-18-l-26 font-semibold">
+                            책 날개를 달다
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <div class="w-full h-56 rounded-lg mb-2.5" style="background-color: rgba(231, 231, 231, 1);">
+                        <img src="" alt="">
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <div class="rounded-full py-1 px-3 w-fit text-11-l-14 font-medium" style="background-color: rgba(253, 228, 236, 1);">
+                                9월
+                            </div>
+                            <div class="text-11-l-14 font-medium" style="color: rgba(55, 56, 60, 0.6);">
+                                2024.09.01~소진시 마감
+                            </div>
+                        </div>
+                        <div class="text-18-l-26 font-semibold">
+                            순교자 성월 EVENT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-16">
+        <div class="container-layout">
+            <div>
+                <div class="flex pb-6 border-b">
+                    <div class="text-18-l-26 font-semibold flex-1">
+                        종료된 이벤트
+                    </div>
+                    <div class="px-5">
+                        <img src="../assets/images/icon/common/up.svg" alt="icon">
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="flex gap-5 p-5 border-t border-b">
+                                <th class="text-base font-medium" style="color: rgba(55, 56, 60, 0.6);">NO</th>
+                                <th class="flex-1 text-base font-medium text-left" style="color: rgba(55, 56, 60, 0.6);" class="flex-1">제목</th>
+                                <th class="text-base font-medium w-24" style="color: rgba(55, 56, 60, 0.6);">조회수</th>
+                                <th class="text-base font-medium w-24" style="color: rgba(55, 56, 60, 0.6);">종료일</th>
+                            </tr>
+                        </thead>
+
+                        <tbody style="color: rgba(55, 56, 60, 0.6);">
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                            <tr class="flex gap-5 p-5 border-b">
+                                <td class="text-base font-normal">00</td>
+                                <td class="flex-1 text-base font-medium" style="color: rgba(23, 23, 25, 1);">이벤트명</td>
+                                <td class="text-base font-normal w-24 text-center">000000</td>
+                                <td class="text-base font-normal w-24 text-center">2024-00-00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="flex items-center">
+                        <div class="p-2">
+                            <img src="../assets/images/icon/common/prev-to-first.svg" alt="icon">
+                        </div>
+                        <div class="p-2">
+                            <img src="../assets/images/icon/common/prev.svg" alt="icon">
+                        </div>
+
+                        <div class="flex items-center">
+                            <div class="m-2 w-6 h-6 rounded-full flex items-center justify-center" style="background-color: rgba(46, 47, 51, 0.88); color: white;">1</div>
+                            <div class="m-2 w-6 h-6 rounded-full flex items-center justify-center" style="color: rgba(55, 56, 60, 0.28);">2</div>
+                            <div class="m-2 w-6 h-6 rounded-full flex items-center justify-center" style="color: rgba(55, 56, 60, 0.28);">3</div>
+                        </div>
+
+                        <div class="p-2">
+                            <img src="../assets/images/icon/common/next.svg" alt="icon">
+                        </div>
+                        <div class="p-2">
+                            <img src="../assets/images/icon/common/next-to-end.svg" alt="icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-36">
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/common.js"></script>
+</body>
+</html>

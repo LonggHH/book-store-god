@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니 / 주문하기</title>
+
+    <!-- Link Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- Link Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../assets/css/util/util.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="" style="background: linear-gradient(to right, #2e3d4e, #241d36);">
+            <div class="container-layout h-16 flex items-center justify-center">
+                <img src="../assets/images/banner/PromoBanner.svg" alt="icon">
+            </div>
+        </section>
+
+        <section class="border-b" style="background-color: rgba(112, 115, 124, 0.08);">
+            <div class="container-layout">
+                <div class="text-xs font-normal py-3 flex gap-5 justify-end" style="color: rgba(46, 47, 51, 0.88);">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">주문/배송</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-layout py-8 utility-layout">
+                <div class="flex items-center justify-between">
+                    <div class="logo overflow-hidden" style="width: 70px; height: 70px;">
+                        <img src="../assets/images/logo/Logo.svg" alt="Logo" />
+                    </div>
+
+                    <div>
+                        <div class="overflow-hidden rounded-full"
+                            style="width: 600px; background: linear-gradient(to right, #0C98E7, #B956EA, #F03964); padding: 1px; ">
+                            <div
+                                class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full">
+                                <div class="text-base font-normal">
+                                    <input type="text" placeholder="하루 10분 주님과 단 둘이">
+                                </div>
+                                <div class="pl-6 border-l" style="border-color: rgba(112, 115, 124, 0.22);">
+                                    <img src="../assets/images/icon/header/home-search.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div>
+                            <img src="../assets/images/icon/header/home-cart.svg" alt="icon" />
+                        </div>
+                        <div>
+                            <img src="../assets/images/icon/header/home-my-account.svg" alt="icon" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-b">
+            <div class="container-layout">
+                <div class="flex justify-between">
+                    <div>
+                        <ul id="header-list-category" class="flex">
+                            <!-- <li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">전체</a> </li>
+                            <li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">스페셜</a> </li>
+                            <li class="py-4 px-3.5"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">도서</a> </li> -->
+                        </ul>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <span class="text-base font-semibold">전체 카테고리</span>
+                        <img src="../assets/images/icon/header/home-hbg-menu.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <div class="container-layout pt-12 pb-8 relative devider-bottom">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-6">
+                    <div class="flex items-center">
+                        <h3 class="text-28-l-38 font-bold">장바구니</h3>
+                        <span class="text-28-l-38 font-bold">(<span>4</span>)</span>
+                    </div>
+                    <div class="w-0.5 h-6" style="background-color: rgba(217, 217, 217, 1);"></div>
+                    <div class="flex items-center" style="color: rgba(55, 56, 60, 0.6);">
+                        <h3 class="text-28-l-38 font-bold">찜</h3>
+                        <span class="text-28-l-38 font-bold">(<span>2</span>)</span>
+                    </div>
+                </div>
+
+                <div>
+                    <ul id="list-step" class="flex gap-6">
+                        <!-- <li class="flex gap-2 items-center"> <span class="flex items-center justify-center w-5 h-5 rounded-full text-white"
+                                style="background-color: rgba(32, 131, 254, 1);">1</span> <span
+                                class="text-base font-semibold" style="color: rgba(23, 23, 25, 1);">장바구니</span> </li>
+                        <li class="flex gap-2 items-center"> <span class="flex items-center justify-center w-5 h-5 rounded-full "
+                                style="background-color: rgba(247, 247, 248, 1); color: rgba(55, 56, 60, 0.28);">2</span>
+                            <span class="text-base font-semibold" style="color: rgba(55, 56, 60, 0.6);">사은품/포장 선택</span>
+                        </li>                      -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-layout relative devider-bottom">
+            <div class="py-5 px-6 flex justify-between items-center">
+                <div class="flex gap-2 items-center">
+                    <div>
+                        <i class="fa-regular fa-circle-check text-2xl" style="color: rgba(55, 56, 60, 0.28);"></i>
+                    </div>
+                    <div class="text-15-l-22 font-medium">전체 선택</div>
+                </div>
+
+                <div class="flex gap-2">
+                    <button class="text-13-l-18 font-semibold py-1.5 px-2 border rounded">선택 삭제</button>
+                    <button class="text-13-l-18 font-semibold py-1.5 px-2 border rounded">주문 불가 삭제</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-layout">
+            <div>
+
+                <div class="py-6  relative devider-bottom">
+                    <div class="flex items-center gap-2 px-6 my-6">
+                        <div>
+                            <i class="fa-solid fa-circle-check text-2xl"></i>
+                        </div>
+                        <div class="w-fit py-1.5 px-3.5 rounded-full border">
+                            <span class="text-17-l-24 font-semibold">도서</span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="flex flex-wrap gap-5 justify-between">
+                        <div class="flex-1 relative">                            
+                            <div class="pl-6 flex gap-5 relative">
+                                <div>
+                                    <i class="fa-solid fa-circle-check text-2xl"></i>
+                                </div>
+    
+                                <div style="width: 160px;" class="flex items-center overflow-hidden">
+                                    <div
+                                        class="h-full w-fit rounded-tl-sm rounded-bl-sm rounded-tr-md rounded-br-md border relative overflow-hidden">
+                                        <img style="width: 100px; height: 150px;"
+                                            src="../assets/images/image/books/book-error-small-x.png" alt="">
+                                        <div class="absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full flex items-center justify-center"
+                                            style="background-color: rgba(0, 0, 0, 0.16);">
+                                            <i class="fa-solid fa-heart text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h4 class="text-base font-semibold mb-3">책 제목</h4>
+                                        <div class="flex gap-1 items-center text-base font-semibold">
+                                            <span style="color: rgba(238, 23, 98, 1);"><span>10</span>%</span>
+                                            <span>
+                                                <span>12,000</span>
+                                                <span class="font-normal">원</span>
+                                            </span>
+                                            <span class="ml-2 font-normal line-through"
+                                                style="color: rgba(55, 56, 60, 0.6);">
+                                                <span>12,000</span>원</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex gap-4 items-center p-1 rounded border">
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>000</span>
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <span class="text-base font-normal"><span
+                                                    class="text-22-l-30 font-semibold">12,000 </span>원</span>
+                                        </div>
+                                    </div>                                
+                                </div>  
+                            </div>
+
+                            <div class="float-right mt-3">
+                                <div class="flex gap-3">
+                                    <button class="text-15-l-22 font-semibold py-2.5 px-8 border rounded mr-2" style="border-color: rgba(238, 23, 98, 1); color: rgba(238, 23, 98, 1);">장바구니</button>
+                                    <button class="text-15-l-22 font-semibold py-2.5 px-8 border rounded text-white" style="background-color: rgba(238, 23, 98, 1);">주문하기</button>
+                                </div>
+                            </div>
+                            <div class="absolute top-0 right-0">
+                                <i class="fa-solid fa-xmark text-2xl"></i>
+                            </div>
+
+                        </div>
+
+
+                        <div class="flex-1 relative">
+                            
+                            <div class="pl-6 flex gap-5 relative">
+                                <div>
+                                    <i class="fa-solid fa-circle-check text-2xl"></i>
+                                </div>
+    
+                                <div style="width: 160px;" class="flex items-center overflow-hidden">
+                                    <div
+                                        class="h-full w-fit rounded-tl-sm rounded-bl-sm rounded-tr-md rounded-br-md border relative overflow-hidden">
+                                        <img style="width: 100px; height: 150px;"
+                                            src="../assets/images/image/books/book-error-small-x.png" alt="">
+                                        <div class="absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full flex items-center justify-center"
+                                            style="background-color: rgba(0, 0, 0, 0.16);">
+                                            <i class="fa-solid fa-heart text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div>
+                                        <h4 class="text-base font-semibold mb-3">책 제목</h4>
+                                        <div class="flex gap-1 items-center text-base font-semibold">
+                                            <span style="color: rgba(238, 23, 98, 1);"><span>10</span>%</span>
+                                            <span>
+                                                <span>12,000</span>
+                                                <span class="font-normal">원</span>
+                                            </span>
+                                            <span class="ml-2 font-normal line-through"
+                                                style="color: rgba(55, 56, 60, 0.6);">
+                                                <span>12,000</span>원</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex gap-4 items-center p-1 rounded border">
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>000</span>
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <span class="text-base font-normal"><span
+                                                    class="text-22-l-30 font-semibold">12,000 </span>원</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                            <div class="float-right mt-3">
+                                <div class="flex gap-3">
+                                    <button class="text-15-l-22 font-semibold py-2.5 px-8 border rounded mr-2" style="border-color: rgba(238, 23, 98, 1); color: rgba(238, 23, 98, 1);">장바구니</button>
+                                    <button class="text-15-l-22 font-semibold py-2.5 px-8 border rounded text-white" style="background-color: rgba(238, 23, 98, 1);">주문하기</button>
+                                </div>
+                            </div>
+                            <div class="absolute top-0 right-0">
+                                <i class="fa-solid fa-xmark text-2xl"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="py-6  relative devider-bottom">
+                    <div class="flex items-center gap-2 px-6 my-6">
+                        <div>
+                            <i class="fa-regular fa-circle-check text-2xl" style="color: rgba(55, 56, 60, 0.28);"></i>
+                        </div>
+                        <div class="w-fit py-1.5 px-3.5 rounded-full border">
+                            <span class="text-17-l-24 font-semibold">도서</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-5 justify-between">
+                        <div class="flex-1  relative">
+                            <div class="pl-6 flex gap-5">
+                                <div>
+                                    <i class="fa-solid fa-circle-check text-2xl"></i>
+                                </div>
+    
+                                <div class="flex items-center overflow-hidden">
+                                    <div
+                                        class="h-full w-fit rounded-tl-sm rounded-bl-sm rounded-tr-md rounded-br-md border relative overflow-hidden">
+                                        <img style="width: 160px; height: 160px;"
+                                            src="../assets/images/image/books/book-error-small-x.png" alt="">
+                                        <!-- <div class="absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full flex items-center justify-center"
+                                            style="background-color: rgba(0, 0, 0, 0.16);">
+                                            <i class="fa-solid fa-heart text-white"></i>
+                                        </div> -->
+                                        <div class="absolute top-0 left-0 z-20 w-full h-full flex items-center justify-center"
+                                            style="background-color: rgba(0, 0, 0, 0.16);">                                        
+                                            <div class="flex flex-col justify-center items-center gap-3">
+                                                <div class="w-6 h-6 rounded">
+                                                    <!-- <i class="fa-solid fa-circle-exclamation text-2xl text-red-50 bg-transparent"></i> -->
+                                                     <img src="../assets/images/icon/shopping-cart/error.svg" alt="">
+                                                </div>
+                                                <span class="text-base font-semibold text-white">품절</span>
+                                            </div>
+                                        </div>                                    
+                                    </div>
+                                </div>
+    
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div class="">
+                                        <h4 class="text-base font-semibold mb-3">책 제목</h4>
+                                        <div class="flex gap-1 items-center text-base font-semibold">
+                                            <span style="color: rgba(238, 23, 98, 1);"><span>10</span>%</span>
+                                            <span>
+                                                <span>12,000</span>
+                                                <span class="font-normal">원</span>
+                                            </span>
+                                            <span class="ml-2 font-normal line-through"
+                                                style="color: rgba(55, 56, 60, 0.6);">
+                                                <span>12,000</span>원</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex gap-4 items-center p-1 rounded border" style="background-color: rgba(247, 247, 248, 1); color: rgba(55, 56, 60, 0.16);">
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>000</span>
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <span class="text-base font-normal" style="color: rgba(55, 56, 60, 0.16);"><span
+                                                    class="text-22-l-30 font-semibold">12,000 </span>원</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="absolute top-0 right-0">
+                                <i class="fa-solid fa-xmark text-2xl"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 relative">
+                           
+                            <div class="pl-6 flex gap-5 relative">
+                                <div>
+                                    <i class="fa-solid fa-circle-check text-2xl"></i>
+                                </div>
+    
+                                <div class="flex items-center overflow-hidden">
+                                    <div
+                                        class="h-full w-fit rounded-tl-sm rounded-bl-sm rounded-tr-md rounded-br-md border relative overflow-hidden">
+                                        <img style="width: 160px; height: 160px;"
+                                            src="../assets/images/image/books/book-error-small-x.png" alt="">
+                                        <div class="absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full flex items-center justify-center"
+                                            style="background-color: rgba(0, 0, 0, 0.16);">
+                                            <i class="fa-solid fa-heart text-white"></i>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="flex-1 flex flex-col justify-between">
+                                    <div class="">
+                                        <h4 class="text-base font-semibold mb-3">책 제목</h4>
+                                        <div class="flex gap-1 items-center text-base font-semibold">
+                                            <span style="color: rgba(238, 23, 98, 1);"><span>10</span>%</span>
+                                            <span>
+                                                <span>12,000</span>
+                                                <span class="font-normal">원</span>
+                                            </span>
+                                            <span class="ml-2 font-normal line-through"
+                                                style="color: rgba(55, 56, 60, 0.6);">
+                                                <span>12,000</span>원</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <div class="flex gap-4 items-center p-1 rounded border">
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-minus"></i>
+                                            </button>
+                                            <span>000</span>
+                                            <button class="w-30px h-30px rounded flex items-center justify-center"
+                                                style="background-color: rgba(247, 247, 248, 1);">
+                                                <i class="fa-solid fa-plus"></i>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <span class="text-base font-normal"><span
+                                                    class="text-22-l-30 font-semibold">12,000 </span>원</span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                            <div class="float-right mt-3">
+                                <div class="flex gap-3">
+                                    <button class="text-15-l-22 font-semibold py-2.5 px-8 border rounded mr-2" style="border-color: rgba(238, 23, 98, 1); color: rgba(238, 23, 98, 1);">장바구니</button>
+                                    <button class="text-15-l-22 font-semibold py-2.5 px-8 border rounded text-white" style="background-color: rgba(238, 23, 98, 1);">주문하기</button>
+                                </div>
+                            </div>
+                            <div class="absolute top-0 right-0">
+                                <i class="fa-solid fa-xmark text-2xl"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-52 mt-2">
+        <div class="container-layout flex justify-between gap-5 py-16">
+            <div>
+                <div class="flex items-center gap-1 justify-between py-3 px-6 rounded-lg border mb-5">
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="../assets/images/icon/shopping-cart/oto.svg" alt="icon">
+                        </div>
+
+                        <div class="text-15-l-22 font-normal">
+                            <span>지금 주문하면 </span>
+                            <span style="color: rgba(32, 131, 254, 1);">9월30일 (월)</span>                            
+                            <span style="color: rgba(23, 23, 25, 1);">도착 예정</span>
+                        </div>
+                    </div>
+
+                    <div class="py-1.5 px-2 rounded" style="background-color: rgba(46, 47, 51, 0.88);">
+                        <span class="text-13-l-18 font-semibold text-white">예정일 안내 정책</span>
+                    </div>
+                </div>
+
+                <div class="px-6 py-8 rounded-lg" style="background-color: rgba(255, 249, 237, 1);">
+                    <h3 class="flex items-center gap-1 mb-4">
+                        <img src="../assets/images/icon/shopping-cart/warn.svg" alt="icon">
+                        <span class="text-base font-semibold text-gray-900">꼭 읽어 주세요</span>
+                    </h3>
+                    <div class="px-3">
+                        <ul class="list-decimal list-outside text-gray-700 mt-4 space-y-2 text-sm leading-relaxed text-13-l-18 font-normal">
+                            <li>예상출고일이 가장 늦은 도서를 기준으로 배송이 됩니다.</li>
+                            <li>수량을 변경하실 때는 원하는 수량을 입력하신 후 '수정' 버튼을 선택하셔야 변경됩니다.</li>
+                            <li>온라인 입금으로 결제하신 경우에는 입금확인이 완료된 시점부터 예상출고일이 계산됩니다.</li>
+                            <li>일정한 날에 배송을 원하시는 경우 상품별 예상출고일을 확인하신 후 주문해 주시기 바랍니다.</li>
+                            <li>택배회사의 유통사정에 따라 배송이 1~2일 지연될 수도 있습니다.</li>
+                            <li>배송료는 상품합계가 30,000원 이상이 되면 무료입니다.</li>
+                            <li>방문수령 시 실시간으로 재고수량이 변하므로 반드시 해당 서원에 전화확인 후 주문하시기 바랍니다.</li>
+                            <li>방문수령 시 주문 후 7일 내 미수령 시 자동으로 결제가 취소되고, 취소된 금액은 결제수단의 승인취소 및 예치금으로 전환됩니다.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border rounded-lg overflow-hidden" style="border-color: rgba(112, 115, 124, 0.52); width: 44%;">
+                <div class="py-5 px-6 relative devider-bottom">
+                    <span class="text-22-l-30 font-semibold">주문 합계</span>
+                </div>
+
+                <div class="p-6">
+                    <div class="pb-6 relative devider-bottom flex flex-col gap-3">
+                        <p class="text-15-l-22 font-normal flex justify-between items-center">
+                            <span style="color: rgba(46, 47, 51, 0.88);">상품수</span>
+                            <span class="font-medium" style="color: rgba(23, 23, 25, 1);">
+                                <span>1</span>
+                                <span>개</span>
+                            </span>
+                        </p>
+                        <p class="text-15-l-22 font-normal flex justify-between items-center">
+                            <span style="color: rgba(46, 47, 51, 0.88);">총 상품금액</span>
+                            <span class="font-medium" style="color: rgba(23, 23, 25, 1);">
+                                <span>30,000</span>
+                                <span>개</span>
+                            </span>
+                        </p>
+                        <p class="text-15-l-22 font-normal flex justify-between items-center">
+                            <span style="color: rgba(46, 47, 51, 0.88);">즉시 할인가</span>
+                            <span class="font-medium" style="color: rgba(23, 23, 25, 1);">
+                                <span>15,000</span>
+                                <span>개</span>
+                            </span>
+                        </p>
+                        <p class="text-15-l-22 font-normal flex justify-between items-center">
+                            <span style="color: rgba(46, 47, 51, 0.88);">배송비</span>
+                            <span class="font-medium" style="color: rgba(23, 23, 25, 1);">
+                                <span>5,000</span>
+                                <span>개</span>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="my-6 flex justify-between items-center">
+                            <span class="text-15-l-22 font-medium">전체 주문 금액</span>
+                            <span>
+                                <span class="text-22-l-30 font-semibold">20,000</span>
+                                <span class="text-sm font-normal">원</span>
+                            </span>
+                        </div>
+
+                        <ul class="flex items-center gap-2">
+                            <li class="w-max px-3.5 py-2.5 rounded border"> 
+                                <span class="text-15-l-22 font-semibold text-nowrap">기부하기</span> </li>
+                            <li class="px-3.5 py-2.5 rounded border"> 
+                                <span class="text-15-l-22 font-semibold">방문수령</span> </li>
+                            <li class="px-7 py-2.5 rounded border" style="background-color: rgba(238, 23, 98, 1);">
+                                <span class="text-15-l-22 font-semibold text-white">주문하기</span> </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-6 rounded border py-2.5 text-center" style="border-color: rgba(238, 23, 98, 1);">
+                        <span class="text-15-l-22 font-semibold" style="color: rgba(238, 23, 98, 1);">장바구니</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/shopping-cart/shopping-cart.js"></script>
+</body>
+
+</html>

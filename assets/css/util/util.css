@@ -1,0 +1,167 @@
+@import url(../font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+}
+
+.container-layout {
+    max-width: 66.25rem;
+    margin: 0 auto;
+}
+
+.header-logo {
+    width: 70px;
+    height: 70px;
+}
+
+input,
+button {
+    outline: none;
+}
+
+ul,
+ol li {
+    list-style: none;
+}
+
+.underline-active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: black;
+}
+
+.text-highlight {
+    background: linear-gradient(to right, #0C98E7, #B956EA, #F03964);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.text-highlight-dot::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #EE1762;
+    border-radius: 50%;
+}
+
+.text-11-l-14 {
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.text-13-l-18 {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.text-14-l-22 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text-15-l-22 {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.text-17-l-24 {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.text-18-l-26 {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.text-22-l-30 {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.text-28-l-38 {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.w-30px {
+    width: 30px;
+}
+
+.h-30px {
+    height: 30px;
+}
+
+.devider-top {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(112, 115, 124, 0.52);
+}
+
+.devider-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgba(112, 115, 124, 0.52);
+}
+
+.two-lines {
+    display: -webkit-box;
+    /* Định dạng hộp linh hoạt */
+    -webkit-line-clamp: 2;
+    /* Hiển thị tối đa 2 dòng */
+    -webkit-box-orient: vertical;
+    /* Đặt hướng của hộp là dọc */
+    overflow: hidden;
+    /* Ẩn phần văn bản vượt quá */
+    text-overflow: ellipsis;
+    /* Thêm dấu "..." nếu văn bản bị cắt */
+}
+
+.text-footer {
+    font-size: 13px; line-height: 18px; font-weight: 400; color: rgba(55, 56, 60, 0.6);
+}
+
+@media (max-width: 425px) {
+    .header-logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mobi-px {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .mobi-pl {
+        padding-left: 20px;
+    }
+  
+    .text-footer {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

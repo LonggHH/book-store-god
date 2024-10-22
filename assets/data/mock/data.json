@@ -1,0 +1,63 @@
+{
+    "home": {
+        "headerCategory": [
+             {"id": 1, "name": "전체", "active": true, "highlight": false},
+             {"id": 2, "name": "스페셜", "active": false, "highlight": true},
+             {"id": 3, "name": "도서", "active": false, "highlight": false},
+             {"id": 4, "name": "성물", "active": false, "highlight": false},
+             {"id": 5, "name": "굿즈", "active": false, "highlight": false},
+             {"id": 6, "name": "바오로딸 Pick", "active": false, "highlight": false},
+             {"id": 7, "name": "ebook", "active": false, "highlight": false},
+             {"id": 8, "name": "음반/뮤직/DVD", "active": false, "highlight": false}
+        ],
+        "bookstoreCategories": [
+            {"id": 1, "name": "전례의오솔길", "url": "./assets/images/icon/home/hero-cup.svg"},
+            {"id": 2, "name": "말씀의오솔길", "url": "./assets/images/icon/home/hero-book.svg"},
+            {"id": 3, "name": "치유의오솔길", "url": "./assets/images/icon/home/hero-water.svg"},
+            {"id": 4, "name": "기도 오솔길", "url": ""},
+            {"id": 5, "name": "영성의오솔길", "url": ""},
+            {"id": 6, "name": "이벤트", "url": ""},
+            {"id": 7, "name": "독서일기", "url": ""},
+            {"id": 8, "name": "신간메일진", "url": ""},
+            {"id": 9, "name": "성경공부교재", "url": ""}
+        ],
+        "newBooks": [
+            {"id": 1, "name": "영원한 도움의 성모 매일기도", "author": "지은이", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book5.png"},
+            {"id": 2, "name": "가리산의 눈먼 벌치기", "author": "지은이", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book6.png"},
+            {"id": 3, "name": "냉당 중입니다.", "author": "지은이", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book7.png"},
+            {"id": 4, "name": "삶이 고통으로 휘청거릴 때", "author": "지은이", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book8.png"},
+            {"id": 5, "name": "가장 멋진 삶", "author": "지은이", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book9.png"},
+            {"id": 6, "name": "abcxyz...", "author": "지은이", "discount": 10, "price": 12600, "subtext": "원", "url": ""}
+        ],
+        "bestBooks": [
+            {"id": 1, "name": "수험생을 위한 묵주의 9일기도", "author": "김옥순 수녀", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book13.png", "isTop": true},
+            {"id": 2, "name": "우리 아이도 신앙을 가지면 좋겠다.", "author": "김옥순 수녀", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book2.png", "isTop": false},
+            {"id": 3, "name": "사는 맛 사는 멋", "author": "김옥순 수녀", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book3.png", "isTop": false},
+            {"id": 4, "name": "하루 10분 주님과 단둘이", "author": "김옥순 수녀", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book4.png", "isTop": false},
+            {"id": 5, "name": "교회상식 속풀이", "author": "김옥순 수녀", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book10.png", "isTop": false},
+            {"id": 6, "name": "영원한 도움의 성모 매일 기도", "author": "김옥순 수녀", "discount": 10, "price": 12600, "subtext": "원", "url": "./assets/images/image/books/book5.png", "isTop": false},
+            {"id": 7, "name": "abcxyz...", "author": "abcxyz...", "discount": 10, "price": 12600, "subtext": "원", "url": "", "isTop": false}
+        ],
+        "picks": [
+            {"id": 1, "name": "전례 Pick", "title": "내 마음아, 주님을 찬미하라", "detail": "하느님께 한걸음 더 다가가려는 분에게", "color": "rgba(115, 139, 255, 1)"},
+            {"id": 2, "name": "기도 Pick", "title": "내 마음아, 주님을 부르라", "detail": "하느님과 함께 머물고 싶은 분에게", "color": "rgba(255, 212, 72, 1)"},
+            {"id": 3, "name": "키워드 Pick", "title": "내 마음아, 주님 안에서 기뻐 뛰라", "detail": "하느님께 나아가는 길을 찾는 분에게", "color": "rgba(246, 100, 158, 1)"},
+            {"id": 4, "name": "수도자의 독서노트", "title": "이 책이 품은, 또 다른 이야기들", "detail": "", "color": "rgba(255, 194, 112, 1)"}
+        ],
+        "reviews": [
+            {"id": 1, "name": "필사와 함께하는 구약성경 컬러링북", "author": "구민정", "star": 5, "detail": "성서를 읽다보면 처음에는 열심히 읽어보려고 애 쓰지만 어느새 깨알 같은 글씨에 눈도 아프고 졸음이 솔솔 밀려온다. 그러다가 에이 하고 덮기도 하고 말이다. 말씀은 봐야겠는데, 쉽지가 않고 그렇다고 덮", "user_review": "닉***** 님의", "url": "./assets/images/image/books/book1.png"},                       
+            {"id": 2, "name": "엄마는 순례길 딸은 여행길", "author": "박지현, 신솔잎", "star": 5, "detail": "엄마와 딸이 함께하는 순례길이라는 것이 정겹고 부럽게 느껴지네요.서로 잘 알고 있다고 생각하지만 몰랐던 것을 알아가고 화해하는 과정들이 공감이 많이 갔어요. 그리", "user_review": "닉***** 님의", "url": "./assets/images/image/books/book2.png"},                       
+            {"id": 3, "name": "이름 없는 순례자 카톨릭클래식", "author": "최익철 신부, 강태용 신부", "star": 5, "detail": "다만 기도를 드릴 때 저의 마음은 행복해집니다.왜 행복해지는지도 모르면서 그저 행복하고 마음이 가볍고 고요해집니다.… 가끔씩 마음이 무거워지고 처지는 느낌이 들어도", "user_review": "닉***** 님의", "url": "./assets/images/image/books/book3.png"},
+            {"id": 3, "name": "이름 없는 순례자 카톨릭클래식", "author": "최익철 신부, 강태용 신부", "star": 5, "detail": "다만 기도를 드릴 때 저의 마음은 행복해집니다.왜 행복해지는지도 모르면서 그저 행복하고 마음이 가볍고 고요해집니다.… 가끔씩 마음이 무거워지고 처지는 느낌이 들어도", "user_review": "닉***** 님의", "url": "./assets/images/image/books/book4.png"}
+            
+        ]
+    },
+    "shoppingCart": {
+       "steps": [
+            {"id": 1, "name": "장바구니", "active": true},
+            {"id": 2, "name": "사은품/포장 선택", "active": false},
+            {"id": 3, "name": "주문/결제", "active": false},
+            {"id": 4, "name": "주문완료", "active": false}
+       ] 
+    }
+}
