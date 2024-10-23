@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인 페이지</title>
+
+    <!-- Link Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- Link Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../assets/css/login/login.css" />
+  </head>
+
+  <body>
+    <header>
+      <section class="login-header">
+        <div class="login-header-img">
+          <img src="../assets/images/logo/Logo.svg" alt="Logo" class="size-full object-contain" />
+        </div>
+      </section>
+    </header>
+    <section
+      class="flex items-center justify-center"
+      style="background-color: rgb(247, 247, 248); padding: 72px 0 80px 0"
+    >
+      <div>
+        <div class="login-container">
+          <h4 class="font-semibold login-heading">회원 로그인</h4>
+          <div class="login-group-input">
+            <div class="mb-2" style="width: 340px; height: 42px">
+              <input type="text" class="login-input" placeholder="아이디를 입력해 주세요." />
+            </div>
+            <div style="width: 340px; height: 42px">
+              <input type="text" class="login-input" placeholder="비밀번호를 입력해 주세요." />
+            </div>
+            <div class="flex items-center justify-start gap-2" style="margin: 12px 0 20px 0">
+              <img
+                src="../assets/images/icon/login/icon-checked.svg"
+                alt=""
+                class="w-6 h-6 rounded-full"
+                style="border: 1px solid var(--Line-Normal-Neutral, rgba(112, 115, 124, 0.16))"
+              />
+              <span
+                class="leading-5 font-normal"
+                style="font-size: 14px; letter-spacing: 0.3px; color: var(--Label-Normal, rgba(23, 23, 25, 1))"
+                >아이디 저장</span
+              >
+            </div>
+            <button
+              class="rounded flex justify-center items-center font-semibold mb-3"
+              style="
+                height: 42px;
+                width: 340px;
+                background: var(--Cool-Neutral-98, rgba(244, 244, 245, 1));
+                font-size: 15px;
+                line-height: 22.01px;
+                color: var(--Label-Assistive, rgba(55, 56, 60, 0.28));
+              "
+            >
+              로그인
+            </button>
+            <div style="display: flex; align-items: center; justify-content: space-around; margin: 0 15px">
+              <button
+                class="font-semibold leading-5 login-separate relative"
+                style="font-size: 13px; color: rgba(55, 56, 60, 0.6); height: 30px"
+              >
+                아이디 찾기
+              </button>
+              <button
+                class="font-semibold leading-5 relative login-separate"
+                style="font-size: 13px; color: rgba(55, 56, 60, 0.6); height: 30px"
+              >
+                비밀번호 찾기
+              </button>
+              <button
+                class="font-semibold leading-5"
+                style="font-size: 13px; color: rgba(55, 56, 60, 0.6); height: 30px"
+              >
+                회원가입
+              </button>
+            </div>
+            <div class="flex items-center" style="margin: 60px 25px 100px 25px; gap: 25px">
+              <a href="" class="login-link-imgs">
+                <img
+                  src="../assets/images/icon/login/icon-nave.svg"
+                  alt=""
+                  class="w-full h-full object-contain login-hover-link"
+                />
+                <div class="login-notify">
+                  <img
+                    src="../assets/images/icon/login/icon-top.svg"
+                    alt=""
+                    style="position: absolute; top: -7px; left: 50px"
+                  />
+                  <span
+                    class="font-normal whitespace-nowrap"
+                    style="
+                      font-size: 11px;
+                      line-height: 14px;
+                      height: 14px;
+                      color: var(--Primary-Normal, rgba(32, 131, 254, 1));
+                    "
+                  >
+                    최근 사용한 로그인
+                  </span>
+                </div>
+              </a>
+              <a href="" class="login-link-imgs">
+                <img src="../assets/images/icon/login/icon-kaka.svg" alt="" class="w-full h-full object-contain" />
+              </a>
+              <a href="" class="login-link-imgs">
+                <img src="../assets/images/icon/login/icon-google.svg" alt="" class="w-full h-full object-contain" />
+              </a>
+              <a href="" class="login-link-imgs">
+                <img src="../assets/images/icon/login/icon-p.svg" alt="" class="w-full h-full object-contain" />
+              </a>
+              <a href="" class="login-link-imgs">
+                <img src="../assets/images/icon/login/icon-apple.svg" alt="" class="w-full h-full object-contain" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-6 mb-3 font-semibold text-lg"
+          style="line-height: 26.01px; color: var(--Label-Strong, rgba(0, 0, 0, 1))"
+        >
+          혜택 안내
+        </div>
+        <div class="login-container">
+          <div class="flex items-center justify-between">
+            <button class="login-member login-active">
+              <img src="../assets/images/icon/login/icon_member_bronze.svg" alt="" />
+            </button>
+            <button class="login-member">
+              <img src="../assets/images/icon/login/icon_member_silver.svg" alt="" />
+            </button>
+            <button class="login-member">
+              <img src="../assets/images/icon/login/icon_member_gold.svg" alt="" />
+            </button>
+          </div>
+          <div class="m-7">
+            <div style="margin: 0 32px 32px 0">
+              <div class="flex items-center gap-10 mb-2">
+                <p
+                  class="font-medium h-5 leading-5 rounded-full text-xs block text-center"
+                  style="
+                    background-color: var(--Pink-95, rgba(253, 228, 236, 1));
+                    width: 42px;
+                    color: var(--Secondary-Strong, rgba(214, 15, 89, 1));
+                  "
+                >
+                  조건
+                </p>
+                <p class="font-semibold leading-4 text-xs" style="color: var(--Label-Normal, rgba(23, 23, 25, 1))">
+                  인터넷서점 가입 회원
+                </p>
+              </div>
+              <div class="flex items-center gap-10 mb-2">
+                <p
+                  class="font-medium h-5 leading-5 rounded-full text-xs block text-center"
+                  style="
+                    background-color: var(--Pink-95, rgba(253, 228, 236, 1));
+                    width: 42px;
+                    color: var(--Secondary-Strong, rgba(214, 15, 89, 1));
+                  "
+                >
+                  할인
+                </p>
+                <p
+                  class="font-normal leading-4 text-xs"
+                  style="color: var(--Label-Normal, rgba(23, 23, 25, 1)); letter-spacing: -0.3px"
+                >
+                  바오로딸, 타 출판사 모든 상품 10% 할인(일부 품목 제외)
+                </p>
+              </div>
+              <div class="flex items-center gap-5">
+                <p
+                  class="font-medium h-5 leading-5 rounded-full text-xs block text-center"
+                  style="
+                    background-color: var(--Pink-95, rgba(253, 228, 236, 1));
+                    width: 64px;
+                    color: var(--Secondary-Strong, rgba(214, 15, 89, 1));
+                  "
+                >
+                  마일리지
+                </p>
+                <p
+                  class="font-normal leading-4 text-xs"
+                  style="color: var(--Label-Normal, rgba(23, 23, 25, 1)); letter-spacing: -0.8px"
+                >
+                  상품별 적립 기준에 따라 3% 마일리지 적립(일부 품목 제외)
+                </p>
+              </div>
+            </div>
+            <div>
+              <h5 class="font-semibold text-xs leading-4 mb-2" style="color: var(--Label-Normal, rgba(23, 23, 25, 1))">
+                공통사항
+              </h5>
+              <ul class="list-disc ml-5">
+                <li
+                  class="font-normal mb-1"
+                  style="font-size: 11px; line-height: 14px; color: rgba(46, 47, 51, 0.88); letter-spacing: 0.5px"
+                >
+                  회원 등급은 매월 25일 산정, 익월 1일 적용되며 회원 자격은 3개월간 유지
+                </li>
+                <li
+                  class="font-normal mb-1"
+                  style="font-size: 11px; line-height: 14px; color: rgba(46, 47, 51, 0.88); letter-spacing: 0.5px"
+                >
+                  마일리지는 1,000원부터 사용 가능
+                </li>
+                <li
+                  class="font-normal mb-1"
+                  style="font-size: 11px; line-height: 14px; color: rgba(46, 47, 51, 0.88); letter-spacing: 0.5px"
+                >
+                  마일리지는 2년간 유효하며, 2년이 경과된 마일리지는 해당 1일에 순차적으로 자동 소멸
+                </li>
+                <li
+                  class="font-normal mb-1"
+                  style="font-size: 11px; line-height: 14px; color: rgba(46, 47, 51, 0.88); letter-spacing: 0.1px"
+                >
+                  해외카드 결제 시 적립금은 1%만 적립
+                </li>
+                <li
+                  class="font-normal"
+                  style="font-size: 11px; line-height: 14px; color: rgba(46, 47, 51, 0.88); letter-spacing: 0.5px"
+                >
+                  3만 원 이상 무료배송
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal close login-->
+    <!-- <div
+      class="fixed top-0 right-0 bottom-0 left-0 flex items-center justify-center"
+      style="background-color: rgba(0, 0, 0, 0.4); z-index: 1000"
+    >
+      <div class="p-8 bg-white rounded-xl flex flex-col justify-center" style="width: 364px">
+        <h4
+          class="font-semibold text-base"
+          style="color: var(--Label-Normal, rgba(23, 23, 25, 1)); letter-spacing: -0.32px"
+        >
+          로그인/회원가입 진행을 닫으시겠습니까?
+        </h4>
+        <p class="font-normal text-xs text-center my-6" style="color: rgba(55, 56, 60, 0.6)">
+          창을 닫으면 진행중인 사항이 모두 사라집니다.
+        </p>
+        <div class="flex gap-4">
+          <button
+            class="rounded font-semibold"
+            style="
+              font-size: 15px;
+              line-height: 22px;
+              width: 142px;
+              height: 42px;
+              color: var(--Label-Normal, rgba(23, 23, 25, 1));
+              border: 1px solid rgba(112, 115, 124, 0.22);
+            "
+          >
+            취소
+          </button>
+          <button
+            class="rounded font-semibold text-white"
+            style="
+              font-size: 15px;
+              line-height: 22px;
+              width: 142px;
+              height: 42px;
+
+              background: var(--Primary-Normal, rgba(32, 131, 254, 1));
+            "
+          >
+            확인
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <!-- end Modal close login -->
+
+    <!-- Modal close login-->
+    <!-- <div
+      class="fixed top-0 right-0 bottom-0 left-0 flex items-center justify-center"
+      style="background-color: rgba(0, 0, 0, 0.4); z-index: 1000"
+    >
+      <div class="p-8 bg-white rounded-xl flex flex-col justify-center" style="width: 364px">
+        <h4
+          class="font-semibold text-base text-center"
+          style="color: var(--Label-Normal, rgba(23, 23, 25, 1)); letter-spacing: -0.32px"
+        >
+          입력하신 아이디와<br />
+          비밀번호가 맞지 않습니다.<br />
+          다시 확인하시고 입력해주시길 바랍니다.
+        </h4>
+
+        <p class="font-normal text-xs text-center my-6" style="color: rgba(55, 56, 60, 0.6)">
+          비밀번호는 영문, 숫자, 특수무자 조합 8자리 이상으로 입력해주시길 바랍니다.
+        </p>
+        <button
+          class="rounded font-semibold text-white"
+          style="
+            font-size: 15px;
+            line-height: 22px;
+            width: 100%;
+            height: 42px;
+
+            background: var(--Primary-Normal, rgba(32, 131, 254, 1));
+          "
+        >
+          확인
+        </button>
+      </div>
+    </div> -->
+  </body>
+</html>
