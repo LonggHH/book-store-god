@@ -1,0 +1,40 @@
+.find-id-btn {
+  width: 166px;
+  height: 42px;
+  font-size: 15px;
+  line-height: 22px;
+  border: 1px solid rgba(112, 115, 124, 0.22);
+}
+
+.find-id-active {
+  color: var(--Primary-Heavy, rgba(14, 84, 196, 1));
+  background: var(--Blue-95, rgba(230, 241, 255, 1));
+  border: 1px solid var(--Primary-Heavy, rgba(14, 84, 196, 1));
+}
+
+.find-id-input {
+  padding: 10px 16px;
+  font-size: 15px;
+  line-height: 22px;
+  height: 42px;
+  outline: none;
+  color: #000;
+  border: 1px solid rgba(112, 115, 124, 0.22);
+  background: var(--Common-100, rgba(255, 255, 255, 1));
+}
+
+.find-id-input::placeholder {
+  color: rgba(55, 56, 60, 0.6);
+  /* color: #000; */
+}
+
+.findId-display {
+  position: absolute;
+  top: 50%;
+  right: 114px;
+  transform: translateY(-50%);
+  color: var(--Label-Assistive, rgba(55, 56, 60, 0.28));
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
