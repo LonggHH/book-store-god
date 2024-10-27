@@ -1,0 +1,47 @@
+.bg-color-select-layout {
+    background-color: rgba(247, 247, 248, 1);
+}
+
+
+.image-size {
+    width: 160px;
+    height: 240px;
+}
+
+.btn-book {
+    width: 160px;
+}
+
+.box-size-item-grid {
+    width: 160px;
+}
+
+@media (max-width: 640px) {
+    .background-title {
+        background-color: rgba(247, 247, 248, 1);
+    }    
+
+    .scope-image {
+        width: 102px; height: 150px;
+    }
+
+    .image-size {
+        width: 102px;
+        height: 150px;
+    }
+    
+    .btn-book {
+        width: 102px;
+    }
+    
+    .box-size-item-grid {
+        width: 102px;
+    }
+}
+
+@media (max-width: 375px) {
+    .padding-text-buy {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}

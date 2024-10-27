@@ -22,16 +22,16 @@ function renderHeaderCategory(listData) {
     for (const item of listData) {
             if (item.active) {
                 stringHtml +=
-                `<li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">${item.name}</a> </li>`;
+                `<li class="py-3 sm:py-4 px-3.5 relative underline-active"> <a class="inline-block h-6 text-base font-semibold" style="white-space: nowrap;color: rgba(46, 47, 51, 0.88);" href="#">${item.name}</a> </li>`;
                 continue;
             }
             if (item.highlight) {
                 stringHtml +=
-                `<li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">${item.name}</a> </li>`;
+                `<li class="py-3 sm:py-4 px-3.5 text-highlight text-highlight-dot"> <a class="inline-block h-6 text-base font-semibold" style="white-space: nowrap;color: rgba(46, 47, 51, 0.88);" href="#">${item.name}</a> </li>`;
                 continue;
             }
             stringHtml +=
-            `<li class="py-4 px-3.5"> <a class="text-base font-medium" style="color: rgba(46, 47, 51, 0.88);" href="#">${item.name}</a> </li>`;
+            `<li class="py-4 px-3.5"> <a class="inline-block h-6 text-base font-medium" style="white-space: nowrap;color: rgba(46, 47, 51, 0.88);" href="#">${item.name}</a> </li>`;
     }
     document.querySelector('#header-list-category').innerHTML = stringHtml;
 }
