@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인 페이지</title>
+
+    <!-- Link Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../assets/css/util/util.css" />
+    <link rel="stylesheet" href="../assets/css/home/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <section
+        class="hidden sm:block"
+        style="background: linear-gradient(to right, #2e3d4e, #241d36)"
+      >
+        <div class="container-layout h-16 flex items-center justify-center">
+          <img src="../assets/images/banner/PromoBanner.svg" alt="icon" />
+        </div>
+      </section>
+
+      <section
+        class="border-b hidden sm:block"
+        style="background-color: rgba(112, 115, 124, 0.08)"
+      >
+        <div class="container-layout">
+          <div
+            class="text-xs py-3 flex gap-5 justify-end"
+            style="color: rgba(46, 47, 51, 0.88)"
+          >
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">주문/배송</a>
+            <a href="#">고객센터</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-layout py-8 utility-layout px-5 sm:p-0">
+          <div class="flex items-center justify-between">
+            <div class="header-logo overflow-hidden" >
+              <img src="../assets/images/logo/Logo.svg" alt="Logo" />
+            </div>
+
+            <div class="hidden sm:block">
+              <div
+                class="overflow-hidden rounded-full"
+                style="
+                  width: 600px;
+                  background: linear-gradient(
+                    to right,
+                    #0c98e7,
+                    #b956ea,
+                    #f03964
+                  );
+                  padding: 1px;
+                "
+              >
+                <div
+                  class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full"
+                >
+                  <div class="text-base">
+                    <input type="text" placeholder="하루 10분 주님과 단 둘이" />
+                  </div>
+                  <div
+                    class="pl-6 border-l"
+                    style="border-color: rgba(112, 115, 124, 0.22)"
+                  >
+                    <img
+                      src="../assets/images/icon/header/home-search.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gap-3 hidden sm:flex">
+              <div>
+                <img
+                  src="../assets/images/icon/header/home-cart.svg"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <img
+                  src="../assets/images/icon/header/home-my-account.svg"
+                  alt="icon"
+                />
+              </div>
+            </div>
+
+            <div class="block sm:hidden">
+              <div class="flex items-center gap-5">
+                <div>로그인</div>
+                <div>
+                  <img
+                    src="../assets/images/icon/header/shopping-bag.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <img src="../assets/images/icon/header/menu.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b">
+        <div class="container-layout">
+          <div class="flex justify-between">
+            <div>
+              <ul id="header-list-category" class="flex">
+                <!-- <li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">전체</a> </li>
+                            <li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">스페셜</a> </li>
+                            <li class="py-4 px-3.5"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">도서</a> </li> -->
+              </ul>
+            </div>
+            <div class="flex gap-2 items-center">
+              <span class="text-base font-semibold">전체 카테고리</span>
+              <img
+                src="../assets/images/icon/header/home-hbg-menu.svg"
+                alt="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section>
+      <div class="container-layout">
+        <section class="flex items-end mt-6 mb-8" style="color: #37383c99">
+          <img src="../assets/images/icon/home/home.svg" class="w-5 h-5 mr-2" />
+          <p class="h-5 ml-0.5">/</p>
+          <p class="h-5 ml-0.5 pl-2" style="font-size: 13px;">고객센터</p>
+          <img
+            src="../assets/images/icon/home/expand_circle_down.svg"
+            class="w-5 h-5 ml-2"
+          />
+          <p class="h-5 ml-0.5">/</p>
+          <p class="h-5 ml-0.5 pl-2" style="font-size: 13px;">1:1 문의</p>
+          <img
+            src="../assets/images/icon/home/expand_circle_down.svg"
+            class="w-5 h-5 ml-2"
+          />
+        </section>
+        <section class="flex justify-between">
+            <!-- left -->
+          <section class="flex flex-col h-screen" style="max-width: 160px;">
+            <div class="mb-8">
+              <h2
+                class="font-semibold"
+                style="font-size: 28px; line-height: 38px"
+              >
+                고객센터
+              </h2>
+            </div>
+            <div class="w-40 flex flex-col justify-between">
+              <ul class="flex flex-col gap-3 mb-3 pl-2">
+                <li class="h-9 leading-9 font-semibold text-sm text-black ">
+                  <a href="">공지사항</a>
+                </li>
+                <li class="h-9 leading-9 font-semibold text-sm text-black">
+                  <a href="">자주 묻는 질문</a>
+                </li>
+                <li class="h-9 leading-9 font-semibold text-sm text-black flex justify-between">
+                  <a href="">1:1 문의</a>
+                  <img src="../assets/images/icon/home/next3.svg">
+                </li>
+              </ul>
+              <ul
+                style="border: 1px solid #70737c38; padding: 10px 20px"
+                class="rounded-md flex flex-col gap-3"
+              >
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">출장사소개</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">자주 묻는 질문</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">대형 그룹 문의</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">비오로텔 북토 다운로드</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="color: var(--Label-Normal, #171719)"
+                >
+                  <a href="#">서비스 이용 안내</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- right -->
+          <section style="max-width: 790px;">
+            <section style="min-width: 790px;">
+                <div style="border-bottom: 1px solid black;">
+                    <div class="flex justify-between items-start mb-3 " >
+                        <div>
+                            <p class="font-semibold" style="font-size: 22px;">전국 서원 안내</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="max-w-[790px]">
+                    <div class="flex" style="margin-top: 44px">
+                        <div class="mr-4">
+                          <p class="font-semibold" style="font-size: 18px;">
+                            대량 주문이란?
+                          </p>
+                          <p class="text-sm" style="margin-top: 10px; font-size: 15px;letter-spacing: 0.154px; line-height: 24px;">
+                            본당, 유치원, 학교, 기업체, 공공기관, 도서관 및 일반회원들이 대량으로 도서, 음반, 영상(DVD)의 제품을 대량 구매하는 것을 말합니다.
+                          </p>
+                          <p class="text-sm " style=" font-size: 15px;letter-spacing: 0.154px; line-height: 24px;">
+                            대량주문은 1회 주문 시 총수량 기준 50부 이상인 경우 이용하실 수 있습니다.
+                          </p>
+                          <p class="text-sm" style=" font-size: 15px; letter-spacing: 0.154px; line-height: 24px;">
+                            (단, 바오로딸출판사에서 출간한 도서, 음반, 영상 매체에만 해당됩니다.)
+                          </p>
+                        </div>
+                        <div
+                        style="
+                          width: 340px;
+                          height: 156px;
+                          background: #eeeeee;
+                          border-radius: 6px;
+                        "
+                        class=" flex-shrink-0"
+                      ></div>
+                    </div>
+                    <p class="font-semibold" style="font-size: 18px; margin-top: 127px;">대량 주문 혜택</p>
+                    <div class="mt-3" style="background: var(--Blue-99, #FAFCFF); border: 1px solid var(--Blue-95, #E6F1FF); border-radius: 8px;">
+                        <div class="flex justify-between items-center mt-8" style="margin-left: 72px; margin-right: 72px;">
+                            <div>
+                                <p class="font-semibold">행정서류 제공 서비스</p>
+                                <p class="mt-2">거래에 필요한 견적서, 계산서, 거래명세서 등 </p>
+                                <p>각종 행정 서류를 제공해 드립니다.</p>
+                            </div>
+                            <div>
+                                <img src="../assets/images/icon/home/Frame.svg" width="120px" height="102px">
+                            </div>
+
+                        </div>
+                        <div style="margin-left: 72px; margin-right: 72px;  margin-top: 32px; height: 1px; background: var(--Blue-95, #E6F1FF);">
+                        </div>
+                        <div class="flex justify-between items-center mt-8" style="margin-left: 72px; margin-right: 72px;">
+                            <div>
+                                <p class="font-semibold">할인혜택 서비스</p>
+                                <p class="mt-2">대량 주문 시 도서정가제 기준 내에서 할인 혜택을 드립니다. </p>
+                            </div>
+                            <div>
+                                <img src="../assets/images/icon/home/Frame2.svg" width="120px" height="102px">
+                            </div>
+
+                        </div>
+                        <div style="margin-left: 72px; margin-right: 72px; margin-top: 32px; height: 1px; background: var(--Blue-95, #E6F1FF);">
+                        </div>
+                        <div class="flex justify-between items-center mt-8 mb-8" style="margin-left: 72px; margin-right: 72px;">
+                            <div>
+                                <p class="font-semibold">부가 서비스</p>
+                                <p class="mt-2">엽서 / 스티커를 제작해 주시면 부착 서비스를 제공해 드립니다. </p>
+                                <p>개별 포장을 원하시면 포장할 수있는 포장봉투나 포장지를 제공해 드립니다.</p>
+                                <p>개별 표장이 필요한 경우에는 포장지나 포장봉투를 함께 보내드립니다.</p>
+                            </div>
+                            <div>
+                                <img src="../assets/images/icon/home/Frame3.svg" width="136px" height="102px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="font-semibold mb-3" style="font-size: 18px; margin-top: 60px;">주문 안내</p>
+                    <div class="flex justify-between" style="gap: 10px;">
+                        <div class="w-1/5  bg-blue-500 " style="background: var(--Blue-99, #FAFCFF); border: 1px solid var(--Blue-95, #E6F1FF); border-radius: 8px;">
+                            <div class="w-6 h-6 rounded-full text-center ml-4 mt-4" style="background: var(--Blue-95, #E6F1FF);">
+                                <p style="color: var(--Primary-Normal, #2083FE);">01</p>
+                            </div>
+                            <div class="ml-4 mt-4 mb-4">
+                                <img src="../assets/images/icon/home/Frame4.svg" width="40px" height="40px">
+                                <p class="mt-3 font-semibold">대량주문</p>
+                                <p class="font-semibold">견적서 작성</p>
+                                <p class="mt-3 text-xs">구입처, 담당자명, 연락처를 기재하여 견적서를 작성해 이메일이나 팩스로 보내주십시오.</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  bg-blue-500 " style="background: var(--Blue-99, #FAFCFF); border: 1px solid var(--Blue-95, #E6F1FF); border-radius: 8px;">
+                            <div class="w-6 h-6 rounded-full text-center ml-4 mt-4" style="background: var(--Blue-95, #E6F1FF);">
+                                <p style="color: var(--Primary-Normal, #2083FE);">02</p>
+                            </div>
+                            <div class="ml-4 mt-4 mb-4">
+                                <img src="../assets/images/icon/home/Frame5.svg" width="35px" height="40px">
+                                <p class="mt-3 font-semibold">견적서에</p>
+                                <p class="font-semibold">대한 답변</p>
+                                <p class="mt-3 text-xs">대량주문에 대한 견적서를 이메일이나 전화로 답변해 드립니다.</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  bg-blue-500 " style="background: var(--Blue-99, #FAFCFF); border: 1px solid var(--Blue-95, #E6F1FF); border-radius: 8px;">
+                            <div class="w-6 h-6 rounded-full text-center ml-4 mt-4" style="background: var(--Blue-95, #E6F1FF);">
+                                <p style="color: var(--Primary-Normal, #2083FE);">03</p>
+                            </div>
+                            <div class="ml-4 mt-4 mb-4">
+                                <img src="../assets/images/icon/home/Frame6.svg" width="35px" height="40px">
+                                <p class="mt-3 font-semibold">주문 확정</p>
+                                <p class="mt-3 text-xs">견적서를 확인하신 후 사업자등록증 등 배송에 필요한 정보를 이메일이나 팩스로 보내주십시오.</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  bg-blue-500 " style="background: var(--Blue-99, #FAFCFF); border: 1px solid var(--Blue-95, #E6F1FF); border-radius: 8px;">
+                            <div class="w-6 h-6 rounded-full text-center ml-4 mt-4" style="background: var(--Blue-95, #E6F1FF);">
+                                <p style="color: var(--Primary-Normal, #2083FE);">04</p>
+                            </div>
+                            <div class="ml-4 mt-4 mb-4">
+                                <img src="../assets/images/icon/home/Frame6.svg" width="35px" height="40px">
+                                <p class="mt-3 font-semibold">금액 결제</p>
+                                <p class="mt-3 text-xs">온라인 입금을 통해 미리 확정된 매체 금액을 결제합니다.</p>
+                            </div>
+                        </div>
+                        <div class="w-1/5  bg-blue-500 " style="background: var(--Blue-99, #FAFCFF); border: 1px solid var(--Blue-95, #E6F1FF); border-radius: 8px;">
+                            <div class="w-6 h-6 rounded-full text-center ml-4 mt-4" style="background: var(--Blue-95, #E6F1FF);">
+                                <p style="color: var(--Primary-Normal, #2083FE);">05</p>
+                            </div>
+                            <div class="ml-4 mt-4 mb-4">
+                                <img src="../assets/images/icon/home/Frame8.svg" width="40px" height="40px">
+                                <p class="mt-3 font-semibold">주문완료</p>
+                                <p class="font-semibold">및 배송</p>
+                                <p class="mt-3 text-xs">주문하신 매체를 준비하여 배송지로 발송합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px solid black; margin-top: 103px;">
+                        <div class="flex justify-between items-start mb-3 " >
+                            <div>
+                                <p class="font-semibold" style="font-size: 22px;">배송, 반품 안내</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="mt-6" style="background: var(--Cool-Neutral-99, #F7F7F8); border-radius: 8px;">
+                        <div style="margin-left: 20px; padding:20px; margin-bottom:20px;">
+                            <div class="flex items-center">
+                                <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                                <p style="font-size: 13px;">도서준비 완료 후 원하시는 기일 내에 지정된 장소로 무료 배송해 드립니다. (주의. 단, 배송처가 여러 곳일 경우 별도의 배송료가 부과됩니다.)</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                                <p style="font-size: 13px;">배송완료 및 확인 후 파본 등의 반품도서에 대하여 신속히 처리해 드립니다.</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                                <p style="font-size: 13px;">배송완료 및 확인 후 최종 견적서와 각종 행정서류를 발송해 드립니다.</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                                <p style="font-size: 13px;">파본에 대하여 반품을 해드립니다.(단, 단순 변심으로 인한 반품은 불가)</p>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                                <p style="font-size: 13px;">택배비 제외하고 반품 도서 확인 후 환불해 드립니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          </section>
+        </section>
+      </div>
+    </section>
+    <section class="border-b border-t" style="margin-top: 140px;">
+        <div class="container-layout">
+            <div class="flex justify-between items-start " style="margin-top: 18px; margin-bottom: 18px;" >
+                <div class="flex gap-12">
+                    <p class="font-semibold">공지사항</p>
+                    <p  style="font-size: 15px;">서비스 점검으로 인한 서비스 중단 안내</p>
+                </div>
+                <div class="flex items-end">                          
+                        <p style="color: #37383C99; font-size: 14px;" class="font-medium py-1 pr-1" >더보기</p>
+                        <img src="../assets/images/icon/home/basic.svg" width="20px" height="20px" class="py-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-6">
+      <div
+        class="container-layout px-5 sm:px-0 flex justify-between flex-col sm:flex-row"
+      >
+        <div>
+          <div class="text-base font-medium">고객센터</div>
+          <div class="my-3">
+            <h2 class="text-2xl font-bold mb-4">02-944-0807</h2>
+            <div class="flex flex-col gap-1">
+              <p class= text-13-l-18">
+                <span>상당시간</span>
+                <span style="color: rgba(46, 47, 51, 0.88)">9:00~18:000</span>
+              </p>
+              <p class= text-13-l-18">
+                <span>점심시간</span> <span>12:30~13:30</span>
+              </p>
+              <p class= text-13-l-18">토, 일, 공휴일 휴무</p>
+            </div>
+          </div>
+          <div
+            class="font-semibold text-13-l-18 py-1.5 text-center text-white rounded hidden sm:block"
+            style="background-color: rgba(46, 47, 51, 0.88)"
+          >
+            1:1 문의
+          </div>
+        </div>
+        <!--  -->
+        <div class="px-16 mx-16 border-r border-l hidden sm:flex">
+          <div class="text-base font-medium mb-3">은행계좌 안내</div>
+          <div class="mb-2">
+            <p class="mb-1 text-lg font-semibold">
+              <span class="text-13-l-18">농협</span>
+              171104-51-006966
+            </p>
+            <p class="mb-1 text-lg font-semibold">
+              <span class="text-13-l-18">국민은행</span>
+              017037-04-000844
+            </p>
+          </div>
+          <div class="text-13-l-18">
+            예금주 : 재단법인 천주교 성바오로딸수도회
+          </div>
+        </div>
+        <!--  -->
+        <div class="hidden sm:block">
+          <div class="text-base font-medium mb-3 px-2">서원 안내</div>
+          <div>
+            <div class="grid grid-cols-3 gap-6">
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">혜화나무</h2>
+                <ul class="space-y-2 text-13-l-18">
+                  <li class="py-1 px-2">광주</li>
+                  <li class="py-1 px-2">부산</li>
+                  <li class="py-1 px-2">일산</li>
+                  <li class="py-1 px-2">인천</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">
+                  알베리오네센터
+                </h2>
+                <ul class="space-y-2 text-13-l-18">
+                  <li class="py-1 px-2">대구</li>
+                  <li class="py-1 px-2">분당</li>
+                  <li class="py-1 px-2">안동</li>
+                  <li class="py-1 px-2">의정부</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">
+                  명동 가톨릭 회관
+                </h2>
+                <ul class="space-y-2 text-13-l-18">
+                  <li class="py-1 px-2">대전</li>
+                  <li class="py-1 px-2">수원</li>
+                  <li class="py-1 px-2">원주</li>
+                  <li class="py-1 px-2">전주</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block sm:hidden">
+          <div class="flex gap-3 items-center">
+            <ul class="flex gap-1.5">
+              <li>
+                <img src="../assets/images/icon/footer/chat.svg" alt="icon" />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/icon/footer/instagram.svg"
+                  alt="icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/icon/footer/youtube.svg"
+                  alt="icon"
+                />
+              </li>
+            </ul>
+            <div>
+              <select class="py-2.5 px-4 border rounded-lg">
+                <option value="패밀리 사이트">패밀리 사이트</option>
+                <option value="123 456">123 456</option>
+                <option value="abc xyz">abc xyz</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-layout">
+        <hr class="mt-6" />
+      </div>
+
+      <div class="flex justify-center sm:hidden border-b">
+        <ul class="flex">
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >출판사 소개</a
+            >
+          </li>
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >이용약관</a
+            >
+          </li>
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >개인정보 취급방법</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="container-layout flex flex-col sm:flex-row flex-wrap py-2.5 px-5 sm:p-0 gap-4 sm:gap-0"
+      >
+        <div
+          style="width: 160px; height: 92px"
+          class="flex items-center justify-center"
+        >
+          <img
+            style="width: 72px; height: 72px"
+            src="../assets/images/logo/logo-grey.svg"
+            alt="img"
+          />
+        </div>
+
+        <div class="flex-1">
+          <div class="hidden sm:flex justify-between items-center">
+            <ul class="flex">
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >출판사 소개</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >이용약관</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >개인정보 취급방법</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >고객센터</a
+                >
+              </li>
+            </ul>
+
+            <div class="gap-3 items-center hidden sm:flex">
+              <ul class="flex gap-1.5">
+                <li>
+                  <img src="../assets/images/icon/footer/chat.svg" alt="icon" />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/icon/footer/instagram.svg"
+                    alt="icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/icon/footer/youtube.svg"
+                    alt="icon"
+                  />
+                </li>
+              </ul>
+              <div>
+                <select class="py-2.5 px-4 border rounded-lg">
+                  <option value="패밀리 사이트">패밀리 사이트</option>
+                  <option value="123 456">123 456</option>
+                  <option value="abc xyz">abc xyz</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm:px-2.5">
+            <h4 class="mb-1 text-footer">
+              <span>재단법인 천주교 성바오로딸수도회</span>
+              <span
+                class="sm:mx-3 sm:px-3 border-l border-r"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >소재지 : 서울시 강북구 오현로7길 34</span
+              >
+              <span>대표자 : 이은아</span>
+            </h4>
+            <h4 class="mb-1 text-footer">
+              <span
+                >사업자 등록번호: <span>2108200035</span>
+                <span style="color: rgba(0, 191, 64, 1)"
+                  >사업자정보확인</span
+                ></span
+              >
+              <span
+                class="mx-3 px-3 border-l border-r"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >통신판매업신고: 제 <span>022</span>호</span
+              >
+              <span>개인정보관리책임자: 김경희</span>
+            </h4>
+            <h4 class="mb-1 text-footer">
+              <span>호스팅 제공자: (주)스마일서브</span>
+              <span
+                class="mx-3 px-3 border-l"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >E-mail: grace@pauline.or.kr</span
+              >
+            </h4>
+            <p class="text-footer">
+              &copy; 성바오로딸수도회 1996 All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/home/home.js"></script>
+  </body>
+</html>
