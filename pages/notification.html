@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인 페이지</title>
+
+    <!-- Link Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../assets/css/util/util.css" />
+    <link rel="stylesheet" href="../assets/css/home/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <section
+        class="hidden sm:block"
+        style="background: linear-gradient(to right, #2e3d4e, #241d36)"
+      >
+        <div class="container-layout h-16 flex items-center justify-center">
+          <img src="../assets/images/banner/PromoBanner.svg" alt="icon" />
+        </div>
+      </section>
+
+      <section
+        class="border-b hidden sm:block"
+        style="background-color: rgba(112, 115, 124, 0.08)"
+      >
+        <div class="container-layout">
+          <div
+            class="text-xs font-normal py-3 flex gap-5 justify-end"
+            style="color: rgba(46, 47, 51, 0.88)"
+          >
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">주문/배송</a>
+            <a href="#">고객센터</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-layout py-8 utility-layout px-5 sm:p-0">
+          <div class="flex items-center justify-between">
+            <div class="header-logo overflow-hidden" >
+              <img src="../assets/images/logo/Logo.svg" alt="Logo" />
+            </div>
+
+            <div class="hidden sm:block">
+              <div
+                class="overflow-hidden rounded-full"
+                style="
+                  width: 600px;
+                  background: linear-gradient(
+                    to right,
+                    #0c98e7,
+                    #b956ea,
+                    #f03964
+                  );
+                  padding: 1px;
+                "
+              >
+                <div
+                  class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full"
+                >
+                  <div class="text-base font-normal">
+                    <input type="text" placeholder="하루 10분 주님과 단 둘이" />
+                  </div>
+                  <div
+                    class="pl-6 border-l"
+                    style="border-color: rgba(112, 115, 124, 0.22)"
+                  >
+                    <img
+                      src="../assets/images/icon/header/home-search.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gap-3 hidden sm:flex">
+              <div>
+                <img
+                  src="../assets/images/icon/header/home-cart.svg"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <img
+                  src="../assets/images/icon/header/home-my-account.svg"
+                  alt="icon"
+                />
+              </div>
+            </div>
+
+            <div class="block sm:hidden">
+              <div class="flex items-center gap-5">
+                <div>로그인</div>
+                <div>
+                  <img
+                    src="../assets/images/icon/header/shopping-bag.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <img src="../assets/images/icon/header/menu.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b">
+        <div class="container-layout">
+          <div class="flex justify-between">
+            <div>
+              <ul id="header-list-category" class="flex">
+                <!-- <li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">전체</a> </li>
+                            <li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">스페셜</a> </li>
+                            <li class="py-4 px-3.5"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">도서</a> </li> -->
+              </ul>
+            </div>
+            <div class="flex gap-2 items-center">
+              <span class="text-base font-semibold">전체 카테고리</span>
+              <img
+                src="../assets/images/icon/header/home-hbg-menu.svg"
+                alt="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section>
+      <div class="container-layout">
+        <section class="flex items-end mt-6 mb-8" style="color: #37383c99">
+          <img src="../assets/images/icon/home/home.svg" class="w-5 h-5 mr-2" />
+          <p class="h-5 ml-0.5">/</p>
+          <p class="h-5 ml-0.5 pl-2">고객센터</p>
+          <img
+            src="../assets/images/icon/home/expand_circle_down.svg"
+            class="w-5 h-5 ml-2"
+          />
+          <p class="h-5 ml-0.5">/</p>
+          <p class="h-5 ml-0.5 pl-2">공지사항</p>
+          <img
+            src="../assets/images/icon/home/expand_circle_down.svg"
+            class="w-5 h-5 ml-2"
+          />
+        </section>
+        <section class="flex justify-between">
+            <!-- left -->
+          <section class="flex flex-col h-screen" style="max-width: 160px;">
+            <div class="mb-8">
+              <h2
+                class="font-semibold"
+                style="font-size: 28px; line-height: 38px"
+              >
+                고객센터
+              </h2>
+            </div>
+            <div class="w-40 flex flex-col justify-between">
+              <ul class="flex flex-col gap-3 mb-3 pl-2">
+                <li class="h-9 leading-9 font-semibold text-sm text-black flex justify-between">
+                  <a href="">공지사항</a>
+                  <img src="../assets/images/icon/home/next3.svg">
+                </li>
+                <li class="h-9 leading-9 font-semibold text-sm text-black">
+                  <a href="">자주 묻는 질문</a>
+                </li>
+                <li class="h-9 leading-9 font-semibold text-sm text-black">
+                  <a href="">1:1 문의</a>
+                </li>
+              </ul>
+              <ul
+                style="border: 1px solid #70737c38; padding: 10px 20px"
+                class="rounded-md flex flex-col gap-3"
+              >
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">출장사소개</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">자주 묻는 질문</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">대형 그룹 문의</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">비오로텔 북토 다운로드</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="color: var(--Label-Normal, #171719)"
+                >
+                  <a href="#">서비스 이용 안내</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- right -->
+          <section style="max-width: 790px;">
+            <section>
+                <div style="border-bottom: 1px solid black;">
+                    <div class="flex justify-between items-start mb-3 " >
+                        <div>
+                            <p class="font-semibold" style="font-size: 22px;">공지사항</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="w-full max-w-[790px] flex flex-wrap mt-7">
+                    <table class="w-full bg-white overflow-hidden ">
+                        <thead>
+                          <tr class="border-b" style="color: #37383C99; height: 70px;">
+                            <th class=" text-center font-medium">NO</th>
+                            <th class=" text-center font-medium">공지 제목</th>
+                            <th class=" text-center font-medium" style="width: 92px;">작성자</th>
+                            <th class=" text-center font-medium w-20">등록일</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="text-center font-medium">
+                                <div style="width: 32px; height: 20px; border-radius: 100px; background-color: #FEECEC; gap: 10px;" class="py-1">
+                                    <p style="font-size: 12px; color: #FF4242; line-height: 12px;">중요</p>
+                                </div>
+                            </td>
+                            <td class="">[지연] 생활성서 출판사 도서 배송 지연 안내</td>
+                            <td class="text-center">관리자</td>
+                            <td class="text-right"><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                          <tr class="border-b" style="height: 70px;">
+                            <td class="">299</td>
+                            <td class="">[모집] 음악과 영상으로 드리는 기도미정 (혜화나무)</td>
+                            <td class="text-center">작성자</td>
+                            <td class=""><p style="color: #37383C99;">2024.09.09</p></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="mt-7 flex justify-end w-full gap-2">
+                        <div class="w-30 h-11 border rounded">
+                            <select class=" rounded-md focus:outline-none h-full" style="padding-left: 12px; margin-right: 12px;">
+                              <option>제목</option>
+                              <option>작성자</option>
+                              <option>등록일</option>
+                            </select>
+                        </div>
+                        <div class="h-11 border rounded flex items-center">
+                            <div>
+                                <input type="text" placeholder="플레이스 홀더" style="padding-left: 16px;">
+                            </div>
+                            <div style="padding-right: 11px; padding-left: 12px;">
+                                <img src="../assets/images/icon/home/search.svg" width="20px" height="20px">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <section class="w-full flex items-center justify-center" style="margin-top: 32px; margin-bottom: 371px;">
+               <div class="flex" style="max-width: 280px;">
+                    <div class="w-10 h-10">
+                        <div class="w-6 h-6 border rounded-full">
+                            <a href="#"><img src="../assets/images/icon/home/previous1.svg"></a>
+                         </div>
+                    </div>
+                    <div class="w-10 h-10">
+                        <div class="w-6 h-6 border rounded-full">
+                           <a href=""><img src="../assets/images/icon/home/previous2.svg"></a>
+                        </div>
+                    </div>
+                    <div class="w-10 h-10">
+                        <div class="w-6 h-6 border rounded-full bg-black">
+                            <a href="#"><p style="text-align: center; color:white;">1</p></a>
+                        </div>
+                    </div>
+                    <div class="w-10 h-10">
+                        <div class="w-6 h-6 ">
+                            <a href="#"><p style="text-align: center; color: var(--Label-Assistive, #37383C47);">2</p></a>
+                        </div>
+                    </div>
+                    <div class="w-10 h-10">
+                        <div class="w-6 h-6 ">
+                            <a href="#"><p style="text-align: center; color: var(--Label-Assistive, #37383C47);">3</p></a>
+                        </div>
+                    </div>
+                    <div class="w-10 h-10">
+                        <div class="w-10 h-10">
+                            <div class="w-6 h-6 border rounded-full">
+                                <a href="#"><img src="../assets/images/icon/home/next1.svg"></a>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="w-10 h-10">
+                        <div class="w-10 h-10">
+                            <div class="w-6 h-6 border rounded-full">
+                                <a href=""><img src="../assets/images/icon/home/next2.svg"></a>
+                             </div>
+                        </div>
+                    </div>
+               </div>
+            </section>
+          </section>
+        </section>
+      </div>
+    </section>
+    <section class="border-b border-t" style="margin-top: 72px;">
+        <div class="container-layout">
+            <div class="flex justify-between items-start " style="margin-top: 18px; margin-bottom: 18px;" >
+                <div class="flex gap-12">
+                    <p class="font-semibold">공지사항</p>
+                    <p class="font-normal" style="font-size: 15px;">서비스 점검으로 인한 서비스 중단 안내</p>
+                </div>
+                <div class="flex items-end">                          
+                        <p style="color: #37383C99; font-size: 14px;" class="font-medium py-1 pr-1" >더보기</p>
+                        <img src="../assets/images/icon/home/basic.svg" width="20px" height="20px" class="py-1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-6">
+      <div
+        class="container-layout px-5 sm:px-0 flex justify-between flex-col sm:flex-row"
+      >
+        <div>
+          <div class="text-base font-medium">고객센터</div>
+          <div class="my-3">
+            <h2 class="text-2xl font-bold mb-4">02-944-0807</h2>
+            <div class="flex flex-col gap-1">
+              <p class="font-normal text-13-l-18">
+                <span>상당시간</span>
+                <span style="color: rgba(46, 47, 51, 0.88)">9:00~18:000</span>
+              </p>
+              <p class="font-normal text-13-l-18">
+                <span>점심시간</span> <span>12:30~13:30</span>
+              </p>
+              <p class="font-normal text-13-l-18">토, 일, 공휴일 휴무</p>
+            </div>
+          </div>
+          <div
+            class="font-semibold text-13-l-18 py-1.5 text-center text-white rounded hidden sm:block"
+            style="background-color: rgba(46, 47, 51, 0.88)"
+          >
+            1:1 문의
+          </div>
+        </div>
+        <!--  -->
+        <div class="px-16 mx-16 border-r border-l hidden sm:flex">
+          <div class="text-base font-medium mb-3">은행계좌 안내</div>
+          <div class="mb-2">
+            <p class="mb-1 text-lg font-semibold">
+              <span class="text-13-l-18 font-normal">농협</span>
+              171104-51-006966
+            </p>
+            <p class="mb-1 text-lg font-semibold">
+              <span class="text-13-l-18 font-normal">국민은행</span>
+              017037-04-000844
+            </p>
+          </div>
+          <div class="text-13-l-18 font-normal">
+            예금주 : 재단법인 천주교 성바오로딸수도회
+          </div>
+        </div>
+        <!--  -->
+        <div class="hidden sm:block">
+          <div class="text-base font-medium mb-3 px-2">서원 안내</div>
+          <div>
+            <div class="grid grid-cols-3 gap-6">
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">혜화나무</h2>
+                <ul class="space-y-2 text-13-l-18 font-normal">
+                  <li class="py-1 px-2">광주</li>
+                  <li class="py-1 px-2">부산</li>
+                  <li class="py-1 px-2">일산</li>
+                  <li class="py-1 px-2">인천</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">
+                  알베리오네센터
+                </h2>
+                <ul class="space-y-2 text-13-l-18 font-normal">
+                  <li class="py-1 px-2">대구</li>
+                  <li class="py-1 px-2">분당</li>
+                  <li class="py-1 px-2">안동</li>
+                  <li class="py-1 px-2">의정부</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">
+                  명동 가톨릭 회관
+                </h2>
+                <ul class="space-y-2 text-13-l-18 font-normal">
+                  <li class="py-1 px-2">대전</li>
+                  <li class="py-1 px-2">수원</li>
+                  <li class="py-1 px-2">원주</li>
+                  <li class="py-1 px-2">전주</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block sm:hidden">
+          <div class="flex gap-3 items-center">
+            <ul class="flex gap-1.5">
+              <li>
+                <img src="../assets/images/icon/footer/chat.svg" alt="icon" />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/icon/footer/instagram.svg"
+                  alt="icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/icon/footer/youtube.svg"
+                  alt="icon"
+                />
+              </li>
+            </ul>
+            <div>
+              <select class="py-2.5 px-4 border rounded-lg">
+                <option value="패밀리 사이트">패밀리 사이트</option>
+                <option value="123 456">123 456</option>
+                <option value="abc xyz">abc xyz</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-layout">
+        <hr class="mt-6" />
+      </div>
+
+      <div class="flex justify-center sm:hidden border-b">
+        <ul class="flex">
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >출판사 소개</a
+            >
+          </li>
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >이용약관</a
+            >
+          </li>
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >개인정보 취급방법</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="container-layout flex flex-col sm:flex-row flex-wrap py-2.5 px-5 sm:p-0 gap-4 sm:gap-0"
+      >
+        <div
+          style="width: 160px; height: 92px"
+          class="flex items-center justify-center"
+        >
+          <img
+            style="width: 72px; height: 72px"
+            src="../assets/images/logo/logo-grey.svg"
+            alt="img"
+          />
+        </div>
+
+        <div class="flex-1">
+          <div class="hidden sm:flex justify-between items-center">
+            <ul class="flex">
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >출판사 소개</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >이용약관</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >개인정보 취급방법</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >고객센터</a
+                >
+              </li>
+            </ul>
+
+            <div class="gap-3 items-center hidden sm:flex">
+              <ul class="flex gap-1.5">
+                <li>
+                  <img src="../assets/images/icon/footer/chat.svg" alt="icon" />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/icon/footer/instagram.svg"
+                    alt="icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/icon/footer/youtube.svg"
+                    alt="icon"
+                  />
+                </li>
+              </ul>
+              <div>
+                <select class="py-2.5 px-4 border rounded-lg">
+                  <option value="패밀리 사이트">패밀리 사이트</option>
+                  <option value="123 456">123 456</option>
+                  <option value="abc xyz">abc xyz</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm:px-2.5">
+            <h4 class="mb-1 text-footer">
+              <span>재단법인 천주교 성바오로딸수도회</span>
+              <span
+                class="sm:mx-3 sm:px-3 border-l border-r"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >소재지 : 서울시 강북구 오현로7길 34</span
+              >
+              <span>대표자 : 이은아</span>
+            </h4>
+            <h4 class="mb-1 text-footer">
+              <span
+                >사업자 등록번호: <span>2108200035</span>
+                <span style="color: rgba(0, 191, 64, 1)"
+                  >사업자정보확인</span
+                ></span
+              >
+              <span
+                class="mx-3 px-3 border-l border-r"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >통신판매업신고: 제 <span>022</span>호</span
+              >
+              <span>개인정보관리책임자: 김경희</span>
+            </h4>
+            <h4 class="mb-1 text-footer">
+              <span>호스팅 제공자: (주)스마일서브</span>
+              <span
+                class="mx-3 px-3 border-l"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >E-mail: grace@pauline.or.kr</span
+              >
+            </h4>
+            <p class="text-footer">
+              &copy; 성바오로딸수도회 1996 All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/home/home.js"></script>
+  </body>
+</html>

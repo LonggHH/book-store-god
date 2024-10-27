@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인 페이지</title>
+
+    <!-- Link Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Link Tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../assets/css/util/util.css" />
+    <link rel="stylesheet" href="../assets/css/home/home.css" />
+  </head>
+
+  <body>
+    <header>
+      <section
+        class="hidden sm:block"
+        style="background: linear-gradient(to right, #2e3d4e, #241d36)"
+      >
+        <div class="container-layout h-16 flex items-center justify-center">
+          <img src="../assets/images/banner/PromoBanner.svg" alt="icon" />
+        </div>
+      </section>
+
+      <section
+        class="border-b hidden sm:block"
+        style="background-color: rgba(112, 115, 124, 0.08)"
+      >
+        <div class="container-layout">
+          <div
+            class="text-xs py-3 flex gap-5 justify-end"
+            style="color: rgba(46, 47, 51, 0.88)"
+          >
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+            <a href="#">주문/배송</a>
+            <a href="#">고객센터</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-layout py-8 utility-layout px-5 sm:p-0">
+          <div class="flex items-center justify-between">
+            <div class="header-logo overflow-hidden">
+              <img src="../assets/images/logo/Logo.svg" alt="Logo" />
+            </div>
+
+            <div class="hidden sm:block">
+              <div
+                class="overflow-hidden rounded-full"
+                style="
+                  width: 600px;
+                  background: linear-gradient(
+                    to right,
+                    #0c98e7,
+                    #b956ea,
+                    #f03964
+                  );
+                  padding: 1px;
+                "
+              >
+                <div
+                  class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full"
+                >
+                  <div class="text-base">
+                    <input type="text" placeholder="하루 10분 주님과 단 둘이" />
+                  </div>
+                  <div
+                    class="pl-6 border-l"
+                    style="border-color: rgba(112, 115, 124, 0.22)"
+                  >
+                    <img
+                      src="../assets/images/icon/header/home-search.svg"
+                      alt="icon"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="gap-3 hidden sm:flex">
+              <div>
+                <img
+                  src="../assets/images/icon/header/home-cart.svg"
+                  alt="icon"
+                />
+              </div>
+              <div>
+                <img
+                  src="../assets/images/icon/header/home-my-account.svg"
+                  alt="icon"
+                />
+              </div>
+            </div>
+
+            <div class="block sm:hidden">
+              <div class="flex items-center gap-5">
+                <div>로그인</div>
+                <div>
+                  <img
+                    src="../assets/images/icon/header/shopping-bag.svg"
+                    alt="icon"
+                  />
+                </div>
+                <div>
+                  <img src="../assets/images/icon/header/menu.svg" alt="icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b">
+        <div class="container-layout">
+          <div class="flex justify-between">
+            <div>
+              <ul id="header-list-category" class="flex">
+                <!-- <li class="py-4 px-3.5 relative underline-active"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">전체</a> </li>
+                            <li class="py-4 px-3.5 text-highlight text-highlight-dot"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">스페셜</a> </li>
+                            <li class="py-4 px-3.5"> <a class="text-base font-semibold" style="color: rgba(46, 47, 51, 0.88);" href="#">도서</a> </li> -->
+              </ul>
+            </div>
+            <div class="flex gap-2 items-center">
+              <span class="text-base font-semibold">전체 카테고리</span>
+              <img
+                src="../assets/images/icon/header/home-hbg-menu.svg"
+                alt="icon"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section>
+      <div class="container-layout">
+        <section class="flex items-end mt-6 mb-8" style="color: #37383c99">
+          <img src="../assets/images/icon/home/home.svg" class="w-5 h-5 mr-2" />
+          <p class="h-5 ml-0.5">/</p>
+          <p class="h-5 ml-0.5 pl-2" style="font-size: 13px">고객센터</p>
+          <img
+            src="../assets/images/icon/home/expand_circle_down.svg"
+            class="w-5 h-5 ml-2"
+          />
+          <p class="h-5 ml-0.5">/</p>
+          <p class="h-5 ml-0.5 pl-2" style="font-size: 13px">1:1 문의</p>
+          <img
+            src="../assets/images/icon/home/expand_circle_down.svg"
+            class="w-5 h-5 ml-2"
+          />
+        </section>
+        <section class="flex justify-between">
+          <!-- left -->
+          <section class="flex flex-col h-screen" style="max-width: 160px">
+            <div class="mb-8">
+              <h2
+                class="font-semibold"
+                style="font-size: 28px; line-height: 38px"
+              >
+                고객센터
+              </h2>
+            </div>
+            <div class="w-40 flex flex-col justify-between">
+              <ul class="flex flex-col gap-3 mb-3 pl-2">
+                <li class="h-9 leading-9 font-semibold text-sm text-black">
+                  <a href="">공지사항</a>
+                </li>
+                <li class="h-9 leading-9 font-semibold text-sm text-black">
+                  <a href="">자주 묻는 질문</a>
+                </li>
+                <li
+                  class="h-9 leading-9 font-semibold text-sm text-black flex justify-between"
+                >
+                  <a href="">1:1 문의</a>
+                  <img src="../assets/images/icon/home/next3.svg" />
+                </li>
+              </ul>
+              <ul
+                style="border: 1px solid #70737c38; padding: 10px 20px"
+                class="rounded-md flex flex-col gap-3"
+              >
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">출장사소개</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">자주 묻는 질문</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">대형 그룹 문의</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="
+                    color: var(--Label-Normal, #171719);
+                    border-bottom: 1px solid
+                      var(--Line-Normal-Alternative, #70737c14);
+                  "
+                >
+                  <a href="#">비오로텔 북토 다운로드</a>
+                </li>
+                <li
+                  class="font-medium text-xs hover:text-blue-500 cursor-pointer pb-2"
+                  style="color: var(--Label-Normal, #171719)"
+                >
+                  <a href="#">서비스 이용 안내</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <!-- right -->
+          <section style="max-width: 790px">
+            <section style="min-width: 790px">
+              <div style="border-bottom: 1px solid black">
+                <div class="flex justify-between items-start mb-3">
+                  <div>
+                    <p class="font-semibold" style="font-size: 22px">
+                      출판사 소개
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-[790px] mt-6">
+                <div style="height: 280px">
+                  <img src="../assets/images/icon/home/publisher.svg" />
+                </div>
+                <p class="text-4xl font-bold mt-6">
+                  바오로딸<span
+                    class="text-4xl font-bold mt-6 ml-1"
+                    style="color: var(--Primary-Normal, #2083fe)"
+                    >.</span
+                  >
+                </p>
+                <p class="mt-6">
+                  바오로딸은 이 시대를 살아가는 모든 이에게 복음의 기쁜 소식을
+                  전하며
+                </p>
+                <p>
+                  하느님과 인간, 인간과 인간이 생명력 있는 커뮤니케이션을 할 수
+                  있도록 ‘살아 있는 매체’가 되기를 원합니다.
+                </p>
+                <p class="mt-4">
+                  하느님께 영광을 드리고 사람들에게 평화를 전하기 위해 매스컴의
+                  부작용과 악영향에 대항하여 선한 출판으로 맞서고자
+                </p>
+                <p class="tracking-tighter">
+                  태어난 창립정신을 되새기며, 사회 커뮤니케이션 세계에서 문화의
+                  복음화에 기여하는 ‘빛의 터전’이 되도록 최선을 다하고 있습니다.
+                </p>
+                <div style="margin-top: 72px" class="flex">
+                  <div>
+                    <p style="font-size: 22px" class="font-semibold">
+                      바오로딸의
+                    </p>
+                    <p
+                      style="
+                        font-size: 22px;
+                        color: var(--Primary-Normal, #2083fe);
+                      "
+                      class="font-semibold whitespace-nowrap"
+                    >
+                      시작과 오늘
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      border-bottom: 1px solid #2083fe;
+                      width: 100%;
+                      margin-bottom: 6px;
+                    "
+                    class="ml-1"
+                  ></div>
+                </div>
+                <div class="flex" style="margin-top: 44px">
+                  <div
+                    style="
+                      width: 245px;
+                      height: 148px;
+                      background: #eeeeee;
+                      margin-left: 30px;
+                    "
+                    class="mr-6 flex-shrink-0"
+                  ></div>
+                  <div style="margin-right: 81px">
+                    <p class="font-medium text-sm">
+                      1915년 이탈리아에서 시작한 성바오로딸수도회는 1960년 12월
+                      13일, 3명의 선교사 수녀들을 한국에 파견하였습니다.
+                    </p>
+                    <br />
+                    <p class="text-sm">
+                      한국 바오로딸은 1961년에 문을 연 충무로 서원을 시작으로
+                      현재 전국 17개 서원에서 봉사하고 있으며,
+                    </p>
+                    <p class="text-sm">
+                      예수 그리스도의 기쁜 소식을 전하기 위하여 서적을 비롯한
+                      다양한 매체를 제작∙보급하고 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex relative" style="margin-top: 54px; z-index: 1">
+                  <div style="margin-left: 30px">
+                    <p class="text-sm">
+                      시대의 흐름과 함께 미디어 개발에 주력하였으며, 성경
+                      사도직과 방송 사도직 등으로 신자들의 재교육 활동에도
+                      참여합니다.
+                    </p>
+                    <br />
+                    <p class="text-sm">
+                      새롭게 발전하는 커뮤니케이션 매체를 활용하여 하느님의
+                      말씀을 전하는 바오로딸은 현 시대의 언어로
+                    </p>
+                    <p class="text-sm">
+                      사람들과 커뮤니케이션하면서 복음 선포에 최선을 다하고
+                      있습니다.
+                    </p>
+                  </div>
+                  <div
+                    style="
+                      width: 245px;
+                      height: 126px;
+                      background: #eeeeee;
+                      margin-right: 30px;
+                      margin-left: 75px;
+                    "
+                    class="mr-6 flex-shrink-0"
+                  ></div>
+                  <img
+                    class="absolute"
+                    src="../assets/images/icon/home/Ellipse 102.svg"
+                    style="top: -40px; right: 8px; z-index: -1"
+                  />
+                  <img
+                    class="absolute"
+                    src="../assets/images/icon/home/Ellipse 103.svg"
+                    style="top: 20px; right: 10px; z-index: -1"
+                  />
+                </div>
+                <div style="height: 618px; margin-top: 72px">
+                  <img src="../assets/images/icon/home/Frame 11578.svg" />
+                </div>
+                <div
+                  class="flex rounded-lg"
+                  style="
+                    height: 310px;
+                    margin-top: 72px;
+                    border: 1px solid var(--Blue-95, #e6f1ff);
+                    box-shadow: 0px 4px 20px 0px #00000014;
+                  "
+                >
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/icon/home/publish-1.svg"
+                  />
+                  <div class="ml-5 mt-10" style="margin-right: 30px">
+                    <p class="font-semibold" style="font-size: 22px">출판</p>
+                    <p
+                      style="
+                        font-size: 12px;
+                        color: var(--Primary-Strong, #1f6fed);
+                      "
+                      class="font-medium"
+                    >
+                      Publication.
+                    </p>
+                    <br />
+
+                    <p>
+                      바오로딸은 교회와 함께, 이 시대의 모든 사람들에게 복음의
+                      빚을 지고 있음을 느끼며, 하느님 사랑의 완전한 전달자이신
+                      예수 그리스도를 본받아
+                    </p>
+                    <p>
+                      하느님과 인간, 인간과 인간의 대화가 이루어지도록
+                      대상자에게 알맞은 언어, 시대와 장소, 사회 커뮤니케이션에
+                      부합한 언어를 사용하여 문화의 복음화를 위해 힘쓰고
+                      있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex rounded-lg"
+                  style="
+                    height: 310px;
+                    margin-top: 72px;
+                    border: 1px solid var(--Blue-95, #e6f1ff);
+                    box-shadow: 0px 4px 20px 0px #00000014;
+                  "
+                >
+                  <div class="mt-10 mr-5" style="margin-left: 30px">
+                    <p class="font-semibold" style="font-size: 22px">음반</p>
+                    <p
+                      style="
+                        font-size: 12px;
+                        color: var(--Primary-Strong, #1f6fed);
+                      "
+                      class="font-medium"
+                    >
+                      Record.
+                    </p>
+                    <br />
+
+                    <p>
+                      음악을 통한 복음 선포는 인간의 선하고 아름다운 감성을
+                      일깨워 일상을 기쁘게 살고 하느님을 향해 눈길을 돌리게 하는
+                      커뮤니케이션의 또 다른 형태입니다. 바오로딸은 신앙생활에
+                      활기를 부여하고 문화의 복음화를 이루기 위해 음반을 비롯한
+                      오디오 매체를 통해서도 복음을 전하고 있습니다.
+                    </p>
+                  </div>
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/icon/home/publish-2.svg"
+                  />
+                </div>
+                <div
+                  class="flex rounded-lg"
+                  style="
+                    height: 310px;
+                    margin-top: 72px;
+                    border: 1px solid var(--Blue-95, #e6f1ff);
+                    box-shadow: 0px 4px 20px 0px #00000014;
+                  "
+                >
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/icon/home/publish-3.svg"
+                  />
+                  <div class="ml-5 mt-7 mb-10" style="margin-right: 30px">
+                    <p class="font-semibold" style="font-size: 22px">영상</p>
+                    <p
+                      style="
+                        font-size: 12px;
+                        color: var(--Primary-Strong, #1f6fed);
+                      "
+                      class="font-medium"
+                    >
+                      Moving Picture..
+                    </p>
+                    <br />
+
+                    <p>
+                      본당 신자 재교육, 주일학교, 여름성경학교, 각종 모임,
+                      개신교 단체에서의 교리교육에 활용하도록 영상 매체를
+                      제작하고 있습니다.지금까지 수십 편의 교육용 비디오와
+                      어린이 애니메이션을 제작했습니다
+                    </p>
+                    <p>
+                      현재 교리교재용 DVD와, 단체별 피정이나 전례 때 사용할 수
+                      있는 영상기도 자료를 제작하고 있으며,
+                      이러닝(시청각통신성서 교육원) 학습 교재 제작을 위한 촬영
+                      편집도 하고 있습니다.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex rounded-lg"
+                  style="
+                    height: 310px;
+                    margin-top: 72px;
+                    border: 1px solid var(--Blue-95, #e6f1ff);
+                    box-shadow: 0px 4px 20px 0px #00000014;
+                  "
+                >
+                  <div class="mt-10 mr-5" style="margin-left: 30px">
+                    <p class="font-semibold" style="font-size: 22px">음반</p>
+                    <p
+                      style="
+                        font-size: 12px;
+                        color: var(--Primary-Strong, #1f6fed);
+                      "
+                      class="font-medium"
+                    >
+                      Pauline.
+                    </p>
+                    <br />
+
+                    <p>
+                      바오로딸 서원은 이 시대를 살아가는 모든 사람과 더불어 기쁨과 고통을 나누는 벗이 되고, 삶의 의미를 생각하며 진리를 찾는 이들에게 가톨릭의 모든 책, 음반, 영상물, 성물, 카드 등을 통해 복음을 전합니다.
+                    </p>
+                    <p>사람들의 발길이 잦은 도심 한가운데에서 소중한 생명의 말씀을 전하고 있습니다.</p>
+                  </div>
+                  <img
+                    class="rounded-lg"
+                    src="../assets/images/icon/home/publish-4.svg"
+                  />
+                </div>
+                <div style="margin-top: 72px;">
+                  <p class="font-semibold" style="font-size: 18px;">연혁</p>
+                  <div class="grid grid-cols-3 gap-5 mt-6">
+                      <div style="background: var(--Primary-Normal, #2083FE); border-radius: 6px;"><p class="text-white pl-4 font-semibold" style="line-height: 48px; font-size: 18px;">2001~현재</p></div>
+                      <div style="background: var(--Cool-Neutral-99, #F7F7F8); border-radius: 6px;"><p class="pl-4 font-semibold" style="line-height: 48px; font-size: 18px; color: var(--Label-Assistive, #37383C47);">1981~2000</p></div>
+                      <div style="background: var(--Cool-Neutral-99, #F7F7F8); border-radius: 6px;"><p class="pl-4 font-semibold" style="line-height: 48px; font-size: 18px; color: var(--Label-Assistive, #37383C47);">1969~1980</p></div>
+                  </div>    
+                  <div class="relative">
+                    <div class="absolute rounded-t-lg rounded-b-lg" style="width: 10px; height: 100%; background-color: #F7F7F8; z-index: -1;"></div>
+                    <div class="flex items-center" style="margin-top: 26px;">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2014.06.17</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">가톨릭인터넷서점 바오로딸 모바일 서비스 시작</p>
+                    </div>
+                  </div>
+                    <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2013.08.12</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">CCL이 적용된 무료가톨릭콘텐츠 사이트 ‘바오로딸 콘텐츠’ 구축</p>
+                      </div>
+                    </div>
+                    <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2011.03.07</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">시청각통신성서교육원 이러닝 학습 시작</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2010.06.15</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">애플 스토어 말씀사탕 어플리케이션 출시 (아이폰, 아이팟에 제공)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2008.04.04</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">가톨릭 디지털 콘텐츠 서비스를 위한 ‘디지털 꿈나무’ 사이트 개설 (2013 . 5. 31.까지)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2006.05.15</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">전자책 서비스 시작 (북토피아)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2004.01.25</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">사도직 ‘알베리오네 센터’ 신축</p>
+                        </div>
+                    </div> 
+                     <div class="flex items-center mt-8">
+                      <div class="rounded-full" style="width: 10px; height: 10px; background: var(--Primary-Normal, #2083FE);"></div>
+                      <div class="mx-6"><p class="font-semibold">2003.04.27</p></div>
+                      <div class="flex items-center">
+                        <div class="w-1 h-1 bg-black rounded-full mr-1"></div>
+                        <p style="font-size: 13px;">바오로 가족 창립자 야고보 알베리오네 신부 시복 (로마)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </div>
+    </section>
+    <section class="border-b border-t" style="margin-top: 72px">
+      <div class="container-layout">
+        <div
+          class="flex justify-between items-start"
+          style="margin-top: 18px; margin-bottom: 18px"
+        >
+          <div class="flex gap-12">
+            <p class="font-semibold">공지사항</p>
+            <p style="font-size: 15px">서비스 점검으로 인한 서비스 중단 안내</p>
+          </div>
+          <div class="flex items-end">
+            <p
+              style="color: #37383c99; font-size: 14px"
+              class="font-medium py-1 pr-1"
+            >
+              더보기
+            </p>
+            <img
+              src="../assets/images/icon/home/basic.svg"
+              width="20px"
+              height="20px"
+              class="py-1"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="py-6">
+      <div
+        class="container-layout px-5 sm:px-0 flex justify-between flex-col sm:flex-row"
+      >
+        <div>
+          <div class="text-base font-medium">고객센터</div>
+          <div class="my-3">
+            <h2 class="text-2xl font-bold mb-4">02-944-0807</h2>
+            <div class="flex flex-col gap-1">
+              <p class="text-13-l-18">
+                <span>상당시간</span>
+                <span style="color: rgba(46, 47, 51, 0.88)">9:00~18:000</span>
+              </p>
+              <p class="text-13-l-18">
+                <span>점심시간</span> <span>12:30~13:30</span>
+              </p>
+              <p class="text-13-l-18">토, 일, 공휴일 휴무</p>
+            </div>
+          </div>
+          <div
+            class="font-semibold text-13-l-18 py-1.5 text-center text-white rounded hidden sm:block"
+            style="background-color: rgba(46, 47, 51, 0.88)"
+          >
+            1:1 문의
+          </div>
+        </div>
+        <!--  -->
+        <div class="px-16 mx-16 border-r border-l hidden sm:flex">
+          <div class="text-base font-medium mb-3">은행계좌 안내</div>
+          <div class="mb-2">
+            <p class="mb-1 text-lg font-semibold">
+              <span class="text-13-l-18">농협</span>
+              171104-51-006966
+            </p>
+            <p class="mb-1 text-lg font-semibold">
+              <span class="text-13-l-18">국민은행</span>
+              017037-04-000844
+            </p>
+          </div>
+          <div class="text-13-l-18">
+            예금주 : 재단법인 천주교 성바오로딸수도회
+          </div>
+        </div>
+        <!--  -->
+        <div class="hidden sm:block">
+          <div class="text-base font-medium mb-3 px-2">서원 안내</div>
+          <div>
+            <div class="grid grid-cols-3 gap-6">
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">혜화나무</h2>
+                <ul class="space-y-2 text-13-l-18">
+                  <li class="py-1 px-2">광주</li>
+                  <li class="py-1 px-2">부산</li>
+                  <li class="py-1 px-2">일산</li>
+                  <li class="py-1 px-2">인천</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">
+                  알베리오네센터
+                </h2>
+                <ul class="space-y-2 text-13-l-18">
+                  <li class="py-1 px-2">대구</li>
+                  <li class="py-1 px-2">분당</li>
+                  <li class="py-1 px-2">안동</li>
+                  <li class="py-1 px-2">의정부</li>
+                </ul>
+              </div>
+
+              <div>
+                <h2 class="text-13-l-18 font-medium py-1 px-2">
+                  명동 가톨릭 회관
+                </h2>
+                <ul class="space-y-2 text-13-l-18">
+                  <li class="py-1 px-2">대전</li>
+                  <li class="py-1 px-2">수원</li>
+                  <li class="py-1 px-2">원주</li>
+                  <li class="py-1 px-2">전주</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block sm:hidden">
+          <div class="flex gap-3 items-center">
+            <ul class="flex gap-1.5">
+              <li>
+                <img src="../assets/images/icon/footer/chat.svg" alt="icon" />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/icon/footer/instagram.svg"
+                  alt="icon"
+                />
+              </li>
+              <li>
+                <img
+                  src="../assets/images/icon/footer/youtube.svg"
+                  alt="icon"
+                />
+              </li>
+            </ul>
+            <div>
+              <select class="py-2.5 px-4 border rounded-lg">
+                <option value="패밀리 사이트">패밀리 사이트</option>
+                <option value="123 456">123 456</option>
+                <option value="abc xyz">abc xyz</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-layout">
+        <hr class="mt-6" />
+      </div>
+
+      <div class="flex justify-center sm:hidden border-b">
+        <ul class="flex">
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >출판사 소개</a
+            >
+          </li>
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >이용약관</a
+            >
+          </li>
+          <li class="py-2.5 px-4">
+            <a
+              class="text-sm font-medium whitespace-nowrap"
+              style="color: rgba(46, 47, 51, 0.88)"
+              href="#"
+              >개인정보 취급방법</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="container-layout flex flex-col sm:flex-row flex-wrap py-2.5 px-5 sm:p-0 gap-4 sm:gap-0"
+      >
+        <div
+          style="width: 160px; height: 92px"
+          class="flex items-center justify-center"
+        >
+          <img
+            style="width: 72px; height: 72px"
+            src="../assets/images/logo/logo-grey.svg"
+            alt="img"
+          />
+        </div>
+
+        <div class="flex-1">
+          <div class="hidden sm:flex justify-between items-center">
+            <ul class="flex">
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >출판사 소개</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >이용약관</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >개인정보 취급방법</a
+                >
+              </li>
+              <li class="p-2.5">
+                <a
+                  class="text-base font-medium whitespace-nowrap"
+                  style="color: rgba(46, 47, 51, 0.88)"
+                  href="#"
+                  >고객센터</a
+                >
+              </li>
+            </ul>
+
+            <div class="gap-3 items-center hidden sm:flex">
+              <ul class="flex gap-1.5">
+                <li>
+                  <img src="../assets/images/icon/footer/chat.svg" alt="icon" />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/icon/footer/instagram.svg"
+                    alt="icon"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../assets/images/icon/footer/youtube.svg"
+                    alt="icon"
+                  />
+                </li>
+              </ul>
+              <div>
+                <select class="py-2.5 px-4 border rounded-lg">
+                  <option value="패밀리 사이트">패밀리 사이트</option>
+                  <option value="123 456">123 456</option>
+                  <option value="abc xyz">abc xyz</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="sm:px-2.5">
+            <h4 class="mb-1 text-footer">
+              <span>재단법인 천주교 성바오로딸수도회</span>
+              <span
+                class="sm:mx-3 sm:px-3 border-l border-r"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >소재지 : 서울시 강북구 오현로7길 34</span
+              >
+              <span>대표자 : 이은아</span>
+            </h4>
+            <h4 class="mb-1 text-footer">
+              <span
+                >사업자 등록번호: <span>2108200035</span>
+                <span style="color: rgba(0, 191, 64, 1)"
+                  >사업자정보확인</span
+                ></span
+              >
+              <span
+                class="mx-3 px-3 border-l border-r"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >통신판매업신고: 제 <span>022</span>호</span
+              >
+              <span>개인정보관리책임자: 김경희</span>
+            </h4>
+            <h4 class="mb-1 text-footer">
+              <span>호스팅 제공자: (주)스마일서브</span>
+              <span
+                class="mx-3 px-3 border-l"
+                style="border-color: rgba(55, 56, 60, 0.6)"
+                >E-mail: grace@pauline.or.kr</span
+              >
+            </h4>
+            <p class="text-footer">
+              &copy; 성바오로딸수도회 1996 All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/home/home.js"></script>
+  </body>
+</html>
