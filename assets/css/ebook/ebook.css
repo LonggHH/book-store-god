@@ -1,0 +1,31 @@
+.ebook1-scope {
+    width: 630px;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+    -webkit-overflow-scrolling: touch;
+}
+
+.scope-imgage {
+    width: 196px;
+    height: 290px;
+}
+
+.barrier {
+    width: 1px;
+    height: 12px;
+}
+
+@media (max-width: 640px) {
+    .scope-imgage {
+        width: 102px;
+        height: 150px;
+    }
+    
+    .barrier {
+        height: 1px;
+        width: 12px;
+    }
+}

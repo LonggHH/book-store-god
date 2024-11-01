@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>카테고리 메인 / 도서 / 중분류</title>
+    <title>카테고리 메인 / 음반,뮤직,DVD</title>
 
     <!-- Link Font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="../assets/css/util/util.css">
     <link rel="stylesheet" href="../assets/css/main-category/main-category.css">
-    <link rel="stylesheet" href="../assets/css/main-category/main-category-middle.css">
+    <link rel="stylesheet" href="../assets/css/dvd/dvd.css">
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 
         <section>
             <div class="container-layout py-2 mobi-px sm:py-8 utility-layout">
-                <div class="flex items-center justify-between gap-0 py-2">
+                <div class="flex items-center justify-between gap-0 ">
                     <div class="header-logo overflow-hidden">
                         <img class="header-logo" src="../assets/images/logo/Logo.svg" alt="Logo" />
                     </div>
@@ -108,7 +108,7 @@
         </section>
     </header>
 
-    <section class=" sm:mt-6 mb-6 sm:mb-8 background-title">
+    <section class="mt-6 mb-6 sm:mb-8">
         <div class="container-layout mobi-px">
             <div class="flex items-center gap-2" style="color: rgba(55, 56, 60, 0.6);">
                 <div>
@@ -118,27 +118,7 @@
                     <span>/</span>
                 </div>
                 <div>
-                    <span>도서</span>
-                </div>
-                <div>
-                    <img src="../assets/images/icon/common/down.svg" alt="icon">
-                </div>
-
-                <div>
-                    <span>/</span>
-                </div>
-                <div>
-                    <span>대분류</span>
-                </div>
-                <div>
-                    <img src="../assets/images/icon/common/down.svg" alt="icon">
-                </div>
-
-                <div>
-                    <span>/</span>
-                </div>
-                <div>
-                    <span>중분류</span>
+                    <span>eBook</span>
                 </div>
                 <div>
                     <img src="../assets/images/icon/common/down.svg" alt="icon">
@@ -153,31 +133,28 @@
 
                 <div class="flex md:gap-14">
                     <div class="flex-col gap-3 w-32 hidden sm:flex">
-                        <div class="text-28-l-38 font-bold">도서</div>
+                        <div class="text-28-l-38 font-bold">뮤직</div>
                         <div>
                             <ul>
-                                <li class="text-sm font-semibold border-b">
-                                    <div class="py-2 pl-2" style="border-top: 1px solid black;">
-                                        <span class="inline-block text-14-l-20 h-5">대분류</span>
-                                    </div>
-                                    <div>
-                                        <ul class="pl-2 py-2">
-                                            <li class="py-1 flex items-center justify-between">
-                                                <div class="text-14-l-20 font-normal">중분류</div>
-                                                <div>
-                                                    <img src="../assets/images/icon/main-category/black-next.svg"
-                                                        alt="icon">
-                                                </div>
-                                            </li>
-                                            <li class="py-1 text-14-l-20 font-normal"
-                                                style="color: rgba(55, 56, 60, 0.6);">중분류</li>
-                                            <li class="py-1 text-14-l-20 font-normal"
-                                                style="color: rgba(55, 56, 60, 0.6);">중분류</li>
-                                            <li class="py-1 text-14-l-20 font-normal"
-                                                style="color: rgba(55, 56, 60, 0.6);">중분류</li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                            </ul>
+                        </div>
+                        <div class="text-28-l-38 font-bold">뮤직</div>
+                        <div>
+                            <ul>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
+                            </ul>
+                        </div>
+                        <div class="text-28-l-38 font-bold">DVD</div>
+                        <div>
+                            <ul>
+                                <li class="text-sm font-semibold py-2 pl-2">대분류</li>
                                 <li class="text-sm font-semibold py-2 pl-2">대분류</li>
                                 <li class="text-sm font-semibold py-2 pl-2">대분류</li>
                                 <li class="text-sm font-semibold py-2 pl-2">대분류</li>
@@ -194,265 +171,303 @@
                         </div>
                     </div>
 
-                    <div class="flex-1 layout-content">
-                        <div class="flex items-center justify-between">
-                            <h4>
-                                <span class="text-18-l-26 font-semibold">중분류</span>
-                                <span>
-                                    <span class="text-base h-6 font-normal inline-block"
-                                        style="color: rgba(55, 56, 60, 0.6);">에 관한 상품</span>
-                                    <span class="text-base h-6 font-normal inline-block"
-                                        style="color: rgba(55, 56, 60, 0.6);">18</span>
-                                    <span class="text-base h-6 font-normal inline-block"
-                                        style="color: rgba(55, 56, 60, 0.6);">개 있습니다</span>
-                                </span>
-                            </h4>
-                            <div class="flex items-center sm:p-1 rounded bg-color-select-layout">
-                                <div class="rounded bg-white shadow-lg">
-                                    <img style="width: 40px; height: 36px;"
-                                        src="../assets/images/icon/main-category/grid-active.svg" alt="icon">
-                                </div>
-                                <div class="hidden sm:block">
-                                    <img style="width: 40px; height: 36px;"
-                                        src="../assets/images/icon/main-category/linear-no-active.svg" alt="icon">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div style="height: 1px;" class="bg-black mt-2 w-full mb-3.5"></div>
-
-                        <div>
-                            <ul class="flex items-center" style="color: rgba(55, 56, 60, 0.6);">
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-semibold p-1.5"
-                                    style="color: rgba(31, 111, 237, 1);">추천순</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal"
-                                    style="color: rgba(112, 115, 124, 0.08);">|</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal p-1.5">최신등록순</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal"
-                                    style="color: rgba(112, 115, 124, 0.08);">|</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal p-1.5">낮은 가격순</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal"
-                                    style="color: rgba(112, 115, 124, 0.08);">|</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal p-1.5">높은 가격순</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal"
-                                    style="color: rgba(112, 115, 124, 0.08);">|</li>
-                                <li class="whitespace-nowrap text-13-l-18 font-medium sm:font-normal p-1.5">최근 판매량</li>
-                            </ul>
-                        </div>
-
-                        <div class="flex items-center justify-between py-2 sm:py-0">
-                            <div class="flex items-center gap-2">
-                                <div>
-                                    <img src="../assets/images/icon/search/check-off.svg" alt="">
-                                </div>
-                                <span class="text-13-l-18 font-semibold inline-block" style="height: 18px;">전체 선택</span>
-                            </div>
-
-                            <div class="flex items-center gap-2">
-                                <div>
-                                    <span class="text-13-l-18 font-semibold hidden sm:inline-block"
-                                        style="height: 18px;">선택한 상품을</span>
-                                </div>
-                                <div class="p-1.5 rounded border">
-                                    <img src="../assets/images/icon/search/heart-white.svg" alt="">
-                                </div>
-                                <div class="flex py-1.5 px-2 items-center rounded border">
-                                    <div>
-                                        <img src="../assets/images/icon/search/cart.svg" alt="icon">
+                    <div class="flex-1 layout-content" style="">
+                        <div id="hero">
+                            <div class="container w-full relative overflow-hidden" style="height: 340px;">
+                                <div class="slide">
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
                                     </div>
-                                    <span class="text-13-l-18 font-semibold hidden sm:inline-block"
-                                        style="height: 18px;">장바구니</span>
-                                </div>
-                                <div class="flex py-1.5 px-2 items-center rounded border">
-                                    <div>
-                                        <img src="../assets/images/icon/search/excel.svg" alt="icon">
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
                                     </div>
-                                    <span class="text-13-l-18 font-semibold hidden sm:inline-block"
-                                        style="height: 18px;">엑셀 다운로드</span>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
+                                    <div class="item"
+                                        style="background-image: url(../assets/images/image/home/hero-slide1.png);">
+                                    </div>
                                 </div>
+
+                                <div class="absolute bottom-3 right-3 z-10 rounded-full text-xs font-medium py-1 px-2"
+                                    style="background-color: rgba(0, 0, 0, 0.12);">
+                                    <span class="number-slide-count text-white">01</span>
+                                    <span style="color: rgba(255, 255, 255, 0.3);">/</span>
+                                    <span style="color: rgba(255, 255, 255, 0.3);">10</span>
+                                </div>
+
+                                <div class="absolute z-10 right-0 hidden sm:flex justify-between px-3"
+                                    style="width: calc(100% - 100px); top: calc(50% - 28px);">
+                                    <button class="hero-prev w-14 h-14 rounded-full text-white"
+                                        style="background-color: rgba(0, 0, 0, 0.06);">
+                                        <i style="font-size: 18px;" class="fa-solid fa-chevron-left"></i>
+                                    </button>
+                                    <button class="hero-next w-14 h-14 rounded-full text-white"
+                                        style="background-color: rgba(0, 0, 0, 0.06);">
+                                        <i style="font-size: 18px;" class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                            <div class="relative block sm:hidden">
+                                <ul class="dots">
+                                    <li class="active"></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
                             </div>
                         </div>
 
-                        <div style="height: 1px; background-color: rgba(112, 115, 124, 0.22);"
-                            class="w-full mt-3.5 mb-6"></div>
+                        <div class="p-8 rounded-lg mt-12 sm:mt-16 flex flex-col sm:flex-row justify-between"
+                            style="background-color: rgba(247, 247, 248, 1);">
 
-                        <div id="list-book" class="flex flex-wrap gap-3 sm:gap-4">
+                            <div class="mb-8">
+                                <h2 class="text-22-l-30 font-semibold">추천 음반</h2>
+                            </div>
 
-                            <!-- <div class="mb-6 flex gap-1 sm:gap-3">
-                                <div style="width: 24px; height: 24px;">
-                                    <img style="width: 24px; height: 24px;" src="../assets/images/icon/search/check-off.svg" alt="">
-                                </div>
-
-                                <div class="flex flex-col sm:flex-row flex-1 items-start">
-                                    <div class="flex-1">
-                                        <div class="flex gap-5">
-                                            <div class="scope-imgage image-size border relative">
-                                                <img class="w-full h-full"  src="../assets/images/image/books/book-error-small-x.png" alt="img">
-                                                <div class="absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full flex items-center justify-center"
-                                                    style="background-color: rgba(0, 0, 0, 0.16);">
-                                                    <i class="fa-solid fa-heart text-white"></i>
-                                                </div>
+                            <div id="recomment" class="flex overflow-auto custom-scroll gap-5">
+                                <div style="width: 196px;">
+                                    <div style="width: 196px;">
+                                        <div>
+                                            <div style="width: 196px; height: 196px;"
+                                                class="scope-imgage shadow-md overflow-hidden border mb-3">
+                                                <img style="width: 196px; height: 196px;"
+                                                    src="../assets/images/image/books/book-error-small-x.png" alt="img">
                                             </div>
 
-                                            <div class="flex-1 flex flex-col justify-between">
-                                                <div>
-                                                    <h4 class="text-base font-semibold mb-3">책 제목</h4>
-                                                    <div class="mb-3">
-                                                        <span class="text-13-l-18 font-normal" style="color: rgba(55, 56, 60, 0.6);">황창연 신부∙바오로딸</span>
-                                                    </div>
-                                                    <div class="flex gap-1 items-center text-base font-semibold">
-                                                        <span style="color: rgba(238, 23, 98, 1);"><span>10</span>%</span>
-                                                        <span class="flex">
-                                                            <span>12,000</span>
-                                                            <span class="font-normal">원</span>
-                                                        </span>
-                                                        <span class="flex items-center"
-                                                            style="color: rgba(55, 56, 60, 0.6);">
-                                                            <span class="ml-2 pl-1 border-l inline-block h-3.5 text-11-l-14 font-normal">100P</span>
-                                                    </div>
-                                                </div>
-                                                <div class="hidden sm:block">
-                                                    <p class="two-lines" style="color: rgba(55, 56, 60, 0.6);">
-                                                        자녀에게 ‘신앙’을 선물하고픈 부모들의 현실적인 고민을 듣고 30여 년간 청소년 ‧ 청년 사목을 해온 저자가 사목 경험과 통찰을 나눈 신앙교육 안
-                                                    </p>
+                                            <div class="mb-3">
+                                                <h3 class="mb-2 text-base font-semibold">도서명</h3>
+                                                <div class="flex gap-1 items-center">
+                                                    <p class="text-sm font-semibold"
+                                                        style="color: rgba(238, 23, 98, 1);">10%</p>
+                                                    <p class="text-sm font-semibold">12,000원</p>
+                                                    <p class="text-11-l-14 font-normal border-l pl-1"
+                                                        style="color: rgba(55, 56, 60, 0.6);">100P</p>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
 
-                                        <div class="py-1.5 flex justify-center rounded border mt-3 px-4 btn-book">
-                                            <div class="flex">
-                                                <img src="../assets/images/icon/search/book-white.svg" alt="icon">
-                                                <span class="text-13-l-18 font-semibold">미리보기</span>
+                                <div style="width: 196px;">
+                                    <div style="width: 196px;">
+                                        <div>
+                                            <div style="width: 196px; height: 196px;"
+                                                class="scope-imgage shadow-md overflow-hidden border mb-3">
+                                                <img style="width: 196px; height: 196px;"
+                                                    src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h3 class="mb-2 text-base font-semibold">도서명</h3>
+                                                <div class="flex gap-1 items-center">
+                                                    <p class="text-sm font-semibold"
+                                                        style="color: rgba(238, 23, 98, 1);">10%</p>
+                                                    <p class="text-sm font-semibold">12,000원</p>
+                                                    <p class="text-11-l-14 font-normal border-l pl-1"
+                                                        style="color: rgba(55, 56, 60, 0.6);">100P</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex flex-row-reverse sm:flex-col gap-3 mt-3 sm:mt-0">
-                                        <div class="text-15-l-22 font-semibold py-2.5 padding-text-buy px-3.5 sm:px-6 rounded" style="background-color: rgba(253, 228, 236, 1); color: rgba(214, 15, 89, 1);">바로 구매</div>
-                                        <div class="text-15-l-22 font-semibold py-2.5 padding-text-buy px-3.5 sm:px-6 rounded border" style="border-color: rgba(238, 23, 98, 1); color: rgba(214, 15, 89, 1);">장바구니</div>
-                                        <div class="text-15-l-22 font-semibold py-2.5 padding-text-buy px-3.5 sm:px-6 rounded border" style="border-color: rgba(32, 131, 254, 1); color: rgba(31, 111, 237, 1);">기부하기</div>
-                                    </div>
-                                </div>
-                            </div>    -->
-                                
-                            <div class="flex flex-col gap-3 ">
-                                <div style="width: 24px; height: 24px;">
-                                    <img style="width: 24px; height: 24px;" src="../assets/images/icon/search/check-off.svg" alt="">
                                 </div>
 
-                                <div class="scope-imgage image-size border relative">
-                                    <img class="w-full h-full"  src="../assets/images/image/books/book-error-small-x.png" alt="img">
-                                    <div class="absolute bottom-3 right-3 z-20 w-9 h-9 rounded-full flex items-center justify-center"
-                                        style="background-color: rgba(0, 0, 0, 0.16);">
-                                        <i class="fa-solid fa-heart text-white"></i>
+                                <div style="width: 196px;">
+                                    <div style="width: 196px;">
+                                        <div>
+                                            <div style="width: 196px; height: 196px;"
+                                                class="scope-imgage shadow-md overflow-hidden border mb-3">
+                                                <img style="width: 196px; height: 196px;"
+                                                    src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h3 class="mb-2 text-base font-semibold">도서명</h3>
+                                                <div class="flex gap-1 items-center">
+                                                    <p class="text-sm font-semibold"
+                                                        style="color: rgba(238, 23, 98, 1);">10%</p>
+                                                    <p class="text-sm font-semibold">12,000원</p>
+                                                    <p class="text-11-l-14 font-normal border-l pl-1"
+                                                        style="color: rgba(55, 56, 60, 0.6);">100P</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div>
-                                    <div class="mb-2">
-                                        <h4 class=" text-base font-semibold">책 제목</h4>
-                                        <span class="inline-block text-13-l-18 font-normal" style="height: 18px;">저자 ∙ 바오로딸</span>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <span class="inline-block text-sm font-semibold h-5" style="color: rgba(238, 23, 98, 1);">
-                                            <span class="inline-block text-sm font-semibold h-5">10%</span>                                            
-                                        </span>
-                                        <span class="inline-block text-sm font-semibold h-5">
-                                            <span class="inline-block text-sm font-semibold h-5">12,000원</span>                                            
-                                        </span>
-                                        <span class="hidden sm:inline-block text-11-l-14 font-normal ml-1 pl-0.5 border-l " style="color: rgba(55, 56, 60, 0.6); height: 14px;">
-                                            <span class="inline-block text-11-l-14 font-normal h-5">100P</span>                                            
-                                        </span>
+                            </div>
+                        </div>
+
+                        <div class="p-8 rounded-lg mt-6 sm:mt-16 mb-16 flex flex-col sm:flex-row justify-between"
+                            style="background-color: rgba(247, 247, 248, 1);">
+
+                            <div class="mb-8">
+                                <h2 class="text-22-l-30 font-semibold">추천 DVD</h2>
+                            </div>
+
+                            <div id="recomment" class="flex overflow-auto custom-scroll gap-5">
+                                <div style="width: 196px;">
+                                    <div style="width: 196px;">
+                                        <div>
+                                            <div style="width: 196px; height: 196px;"
+                                                class="scope-imgage shadow-md overflow-hidden border mb-3">
+                                                <img style="width: 196px; height: 196px;"
+                                                    src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h3 class="mb-2 text-base font-semibold">도서명</h3>
+                                                <div class="flex gap-1 items-center">
+                                                    <p class="text-sm font-semibold"
+                                                        style="color: rgba(238, 23, 98, 1);">10%</p>
+                                                    <p class="text-sm font-semibold">12,000원</p>
+                                                    <p class="text-11-l-14 font-normal border-l pl-1"
+                                                        style="color: rgba(55, 56, 60, 0.6);">100P</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <div class="flex items-center justify-between">
-                                    <div style="background-color: rgba(253, 228, 236, 1);" class="py-1.5 rounded px-7 sm:px-9 h-full flex items-center justify-center">
-                                        <span class="text-13-l-18 font-semibold inline-block" style="height: 18px; color: rgba(214, 15, 89, 1);">바로구매</span>
+                                <div style="width: 196px;">
+                                    <div style="width: 196px;">
+                                        <div>
+                                            <div style="width: 196px; height: 196px;"
+                                                class="scope-imgage shadow-md overflow-hidden border mb-3">
+                                                <img style="width: 196px; height: 196px;"
+                                                    src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h3 class="mb-2 text-base font-semibold">도서명</h3>
+                                                <div class="flex gap-1 items-center">
+                                                    <p class="text-sm font-semibold"
+                                                        style="color: rgba(238, 23, 98, 1);">10%</p>
+                                                    <p class="text-sm font-semibold">12,000원</p>
+                                                    <p class="text-11-l-14 font-normal border-l pl-1"
+                                                        style="color: rgba(55, 56, 60, 0.6);">100P</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="hidden sm:block rounded border p-1.5">
-                                        <img src="../assets/images/icon/main-category/cart.svg" alt="">
+                                </div>
+
+                                <div style="width: 196px;">
+                                    <div style="width: 196px;">
+                                        <div>
+                                            <div style="width: 196px; height: 196px;"
+                                                class="scope-imgage shadow-md overflow-hidden border mb-3">
+                                                <img style="width: 196px; height: 196px;"
+                                                    src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <h3 class="mb-2 text-base font-semibold">도서명</h3>
+                                                <div class="flex gap-1 items-center">
+                                                    <p class="text-sm font-semibold"
+                                                        style="color: rgba(238, 23, 98, 1);">10%</p>
+                                                    <p class="text-sm font-semibold">12,000원</p>
+                                                    <p class="text-11-l-14 font-normal border-l pl-1"
+                                                        style="color: rgba(55, 56, 60, 0.6);">100P</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between flex-wrap flex-col sm:flex-row w-full">
+                            <div>
+                                <h4 class="text-20-l-28 sm:text-22-l-30 font-semibold mb-5 sm:mb-6">베스트 뮤직</h4>
+
+                                <div style="height: 1px; background-color: rgba(0, 0, 0, 1);"></div>
+
+                                <div class="pt-2">
+                                    <div class="px-5 flex items-center gap-5 mb-2 flex-wrap">
+                                        <div class="flex items-center gap-5">
+                                            <p class="text-sm font-normal w-6"
+                                                style="color: rgba(112, 115, 124, 0.16);">01</p>
+                                            <p class="text-sm font-medium w-44">나는 소중하니까요</p>
+                                        </div>
+                                        <div class="flex items-center gap-2.5">
+                                            <div>
+                                                <img style="width: 32px; height: 32px;"
+                                                    src="../assets/images/icon/dvd/g.svg" alt="icon">
+                                            </div>
+                                            <div class="barrier"></div>
+                                            <div>
+                                                <img style="width: 32px; height: 32px;"
+                                                    src="../assets/images/icon/dvd/v.svg" alt="icon">
+                                            </div>
+                                            <div class="barrier"></div>
+                                            <div>
+                                                <img style="width: 32px; height: 32px;"
+                                                    src="../assets/images/icon/dvd/b.svg" alt="icon">
+                                            </div>
+                                            <div class="barrier"></div>
+                                            <div>
+                                                <img style="width: 32px; height: 32px;"
+                                                    src="../assets/images/icon/dvd/f.svg" alt="icon">
+                                            </div>
+                                            <div class="barrier"></div>
+                                            <div>
+                                                <img style="width: 32px; height: 32px;"
+                                                    src="../assets/images/icon/dvd/o.svg" alt="icon">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
+                            <div>
+                                <h4 class="text-20-l-28 sm:text-22-l-30 font-semibold mb-5 sm:mb-6">유튜브</h4>
 
-                        <div class="my-6" style="height: 1px; background-color: rgba(112, 115, 124, 0.22);"></div>
+                                <div class="flex flex-col gap-5">
+                                    <div class="video-scope">
+                                        <img class="video-scope"
+                                            src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                    </div>
 
-                        <div class="flex justify-center">
-                            <div class="flex items-center">
-                                <div class="p-2">
-                                    <img src="../assets/images/icon/common/prev-to-first.svg" alt="icon">
-                                </div>
-                                <div class="p-2">
-                                    <img src="../assets/images/icon/common/prev.svg" alt="icon">
-                                </div>
-        
-                                <div class="flex items-center">
-                                    <div class="m-2 w-6 h-6 rounded-full flex items-center justify-center" style="background-color: rgba(46, 47, 51, 0.88); color: white;">1</div>
-                                    <div class="m-2 w-6 h-6 rounded-full flex items-center justify-center" style="color: rgba(55, 56, 60, 0.28);">2</div>
-                                    <div class="m-2 w-6 h-6 rounded-full flex items-center justify-center" style="color: rgba(55, 56, 60, 0.28);">3</div>
-                                </div>
-        
-                                <div class="p-2">
-                                    <img src="../assets/images/icon/common/next.svg" alt="icon">
-                                </div>
-                                <div class="p-2">
-                                    <img src="../assets/images/icon/common/next-to-end.svg" alt="icon">
+                                    <div class="video-scope">
+                                        <img class="video-scope"
+                                            src="../assets/images/image/books/book-error-small-x.png" alt="img">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
-
-            </div>
-
-            <div class="absolute top-0 w-24 hidden flex-col items-center lg:flex" style="left: calc(100% + 32px);">
-                <div class="w-full text-xs font-medium border rounded-md p-2.5 text-center"
-                    style="color: rgba(46, 47, 51, 0.88);">
-                    <span>이벤트</span>
-                    <hr class="my-2">
-                    <span>출석체크</span>
-                </div>
-
-                <div class="w-full my-4">
-
-                    <div class="py-2 text-center"
-                        style="background-color: rgba(40, 42, 63, 1); border-top-left-radius: 12px; border-top-right-radius: 12px;">
-                        <span class="text-sm font-medium text-white">최근 본 상품</span>
-                    </div>
-
-                    <div class="px-3 pt-3 h-24 overflow-hidden mb-1"
-                        style="background-color: rgba(247, 247, 248, 1); border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;">
-                        <div class="w-full h-24 bg-cover bg-top bg-no-repeat overflow-hidden"
-                            style="background-image: url(../assets/images/image/books/book4.png);"></div>
-                    </div>
-
-                    <div class="px-3 pt-3 h-24 overflow-hidden rounded-xl"
-                        style="background-color: rgba(247, 247, 248, 1);">
-                        <div class="w-full h-24 bg-cover bg-top bg-no-repeat overflow-hidden"
-                            style="background-image: url(../assets/images/image/books/book11.png);"></div>
-                    </div>
-
-                </div>
-
-                <div>
-                    <div
-                        class="w-14 h-14 rounded-full bg-white shadow-md flex flex-col items-center justify-center gap-1">
-                        <span>
-                            <i class="fa-solid fa-chevron-up"></i>
-                        </span>
-                        <span class="text-xs font-semibold">TOP</span>
-                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
 
-    <section id="announcement" class=" py-2 border-t border-b">
+    <section id="announcement" class=" py-2 border-t border-b mt-16">
         <div class="container-layout px-5 sm:px-0">
             <div class="flex items-center gap-5">
                 <div class="text-base font-semibold p-2.5" style="white-space: nowrap;">공지사항</div>
@@ -536,7 +551,7 @@
                     style="background-color: rgba(46, 47, 51, 0.88);">1:1 문의</div>
             </div>
             <!--  -->
-            <div class="sm:px-2 sm:mx-2 md:px-16 md:mx-16 border-r border-l hidden sm:flex sm:flex-col">
+            <div class="sm:px-2 sm:mx-2 md:px-16 md:mx-16 border-r border-l hidden sm:flex">
                 <div class="text-base font-medium mb-3">은행계좌 안내</div>
                 <div class="mb-2">
                     <p class="mb-1 text-lg font-semibold">
@@ -689,8 +704,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../assets/js/util.js"></script>
     <script src="../assets/js/common.js"></script>
-
-    <script src="../assets/js/category-book-middle/category-book-middle.js"></script>
+    <script src="../assets/js/main-category/main-category.js"></script>
 </body>
 
 </html>

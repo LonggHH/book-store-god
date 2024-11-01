@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신간 메일진</title>
+
+    <!-- Link Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Link Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../assets/css/util/util.css">
+    <link rel="stylesheet" href="../assets/css/main-category/main-category.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="hidden sm:block h-16 overflow-hidden pt-2" style="background: linear-gradient(to right, #2e3d4e, #241d36);">
+            <div class="container-layout h-16 flex items-center justify-center">
+                <img style="width: 280px; height: 72px;" src="../assets/images/banner/promo-banner.svg" alt="icon">
+            </div>
+        </section>
+
+        <section class="border-b hidden sm:block" style="background-color: rgba(112, 115, 124, 0.08);">
+            <div class="container-layout">
+                <div class="text-xs font-normal py-3 flex gap-5 justify-end" style="color: rgba(46, 47, 51, 0.88);">
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">주문/배송</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-layout py-2 mobi-px sm:py-8 utility-layout">
+                <div class="flex items-center justify-between gap-0 ">
+                    <div class="header-logo overflow-hidden">
+                        <img class="header-logo" src="../assets/images/logo/Logo.svg" alt="Logo" />
+                    </div>
+
+                    <div class="flex-1 hidden sm:block sm:mx-36">
+                        <div class="overflow-hidden rounded-full "
+                            style="background: linear-gradient(to right, #0C98E7, #B956EA, #F03964); padding: 1px; ">
+                            <div
+                                class="bg-white flex justify-between items-center h-full overflow-hidden px-5 py-3 rounded-full">
+                                <div class="text-base font-normal">
+                                    <input type="text" placeholder="하루 10분 주님과 단 둘이">
+                                </div>
+                                <div class="pl-6 border-l" style="border-color: rgba(112, 115, 124, 0.22);">
+                                    <img src="../assets/images/icon/header/home-search.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gap-3 hidden sm:flex">
+                        <div>
+                            <img style="width: 48px !important; height: 48px;" src="../assets/images/icon/header/home-cart.svg" alt="icon" />
+                        </div>
+                        <div>
+                            <img style="width: 56px !important; height: 56px;" src="../assets/images/icon/header/my-home-account.svg" alt="icon" />
+                        </div>
+                    </div>
+
+                    <div class="flex sm:hidden gap-5 items-center">
+                        <div class="text-xs font-semibold py-2 px-4 rounded-full text-white bg-highlight">
+                            로그인
+                        </div>
+                        <div>
+                            <img src="../assets/images/icon/header/shopping-bag.svg" alt="">
+                        </div>
+                        <div>
+                            <img src="../assets/images/icon/header/menu.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-b">
+            <div class="container-layout overflow-hidden">
+                <div class="flex justify-between overflow-auto">
+                    <div>
+                        <ul id="header-list-category" class="flex">                            
+                        </ul>
+                    </div>
+                    <div class="flex gap-2 items-center">
+                        <span class="text-base font-semibold hidden sm:block" style="white-space: nowrap;">전체 카테고리</span>
+                        <img src="../assets/images/icon/header/home-hbg-menu.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="mt-6 mb-6 sm:mb-8">
+        <div class="container-layout mobi-px">
+            <div class="flex items-center gap-2" style="color: rgba(55, 56, 60, 0.6);">
+                <div>
+                    <img src="../assets/images/icon/common/home.svg" alt="icon">
+                </div>
+                <div>
+                    <span>/</span>
+                </div>
+                <div>
+                    <span>신간 메일진</span>
+                </div>
+                <div>
+                    <img src="../assets/images/icon/common/down.svg" alt="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-layout">
+            <div class="relative mobi-px">
+                
+                <div class="flex md:gap-14">
+                    <div class="flex-col gap-3 w-32 hidden sm:flex">
+                        <div class="text-28-l-38 font-bold">Pick</div>
+                        <div>
+                            <ul>
+                                <li class="text-sm font-semibold py-2 pl-2">전례 Pick</li>
+                                <li class="text-sm font-semibold py-2 pl-2">기도 Pick</li>
+                                <li class="text-sm font-semibold py-2 pl-2">키워드 Pick</li>                                
+                            </ul>
+                        </div>
+                        <hr>
+                        <div>
+                            <ul class="flex flex-col gap-3">
+                                <li class="text-13-l-18 font-medium whitespace-nowrap">수도자의 독서노트</li>
+                                <li class="text-13-l-18 font-medium whitespace-nowrap flex items-center justify-between gap-1">
+                                    <p>신간메일</p>
+                                    <img src="../assets/images/icon/pick/menu-next.svg" alt="icon">
+                                </li>
+                                <li class="text-13-l-18 font-medium whitespace-nowrap">리뷰 게시판</li>                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 layout-content border-l border-r" style="border-color: rgba(230, 241, 255, 1);">
+
+                        <div class="h-2.5 mb-11" style="background-color: rgba(6, 57, 139, 1);"></div>
+
+                        <div class="flex items-center justify-center mb-8">
+                            <div>
+                                <div class="flex items-center gap-2 mb-3">
+                                    <div class="text-28-l-38 font-bold">말씀의</div>
+                                    <div>
+                                        <img style="width: 48px; height: 50px;" src="../assets/images/icon/pick/cup.svg" alt="icon">
+                                    </div>
+                                    <div class="text-28-l-38 font-bold">배달부</div>
+                                </div>
+
+                                <div class="text-base font-normal rounded-full py-0.5 px-4 text-white" style="background-color: rgba(249, 174, 59, 1);">
+                                    이 주에 입고된 따끈따끈한 신간
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mb-4">
+                            <div class="flex px-2.5">
+                                <div class="text-base font-semibold rounded py-1.5 px-4 border" style="color: rgba(32, 131, 254, 1); border-color: rgba(32, 131, 254, 1);">신간소식 (1257호)</div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mb-6">
+                            <div class="flex px-2.5">
+                                <div class="rounded-xl overflow-hidden" style="width: 700px; height: 300px;">
+                                    <img class="w-full h-full" src="../assets/images/image/pick/pic.png" alt="img">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mb-6">
+                            <div class="flex px-2.5">
+                                <h2 class="text-28-l-38 font-bold">가을이 주는 기도, 묵주기도</h2>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mb-16">
+                            <div class="px-2.5">
+                                <p class="mb-5 text-16-l-26 font-normal">
+                                    가을입니다. 그리고 묵주기도 성월이지요. <br>
+                                    갑자기 추워진 날씨에 깜짝 놀라 웃옷을 하나 더 입었습니다...
+                                </p>
+
+                                <div class="flex items-center gap-1">
+                                    <p class="text-13-l-18 font-normal" style="color: rgba(55, 56, 60, 0.6);">더보기</p>
+                                    <img class="h-5 w-5" src="../assets/images/icon/common/down.svg" alt="icon">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-8">
+                            <div class="px-2.5">
+                                <div class="flex gap-3 items-center py-2.5 border-t-2 border-b-2">
+                                    <div>
+                                        <img src="../assets/images/icon/home/heart-gift.svg" alt="icon">
+                                    </div>
+                                    <h2 class="text-22-l-30 font-semibold">새로 나왔어요!</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-8">
+                            <div class="px-2.5">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-22-l-30 font-semibold">새로나온 도서</div>
+                                    <div class="flex items-center gap-1">
+                                        <div class="text-base font-semibold" style="color: rgba(55, 56, 60, 0.6)">더보기</div>
+                                        <div>
+                                            <img src="../assets/images/icon/home/section-add.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-16">
+                            <div class="px-2.5">
+                                <div class="relative">                                   
+                                    <div id="new" class="w-full relative overflow-hidden " style="width: 700px; height: 326px;">
+
+                                        <div class="swiper newSwiper w-full h-full">
+                                            <div class="swiper-wrapper" >
+                        
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div>
+                                                        <div style="overflow: hidden; 
+                                                        border-top-left-radius: 4px; border-top-right-radius: 8px; 
+                                                        border-bottom-left-radius: 4px; border-bottom-right-radius: 8px;" class="image-slide-new shadow-md mb-3 border">
+                                                            <img class="image-slide-new" src="../assets/images/image/books/book2.png" alt="">
+                                                        </div>
+                                
+                                                        <div class="flex flex-col content-new">
+                                                            <h4 class="text-base font-semibold h-6 overflow-hidden truncate">영원한 도움의 성모</h4>
+                                                            <span class="font-normal inline-block mb-3 mt-1" style="font-size: 13px; line-height: 18px; color: rgba(55, 56, 60, 0.6);height: 18px;">지은이</span>
+                                                            <span class="flex items-center gap-1 text-sm font-semibold">
+                                                                <span style="color: rgba(238, 23, 98, 1);"> <span>10</span>%</span>
+                                                                <span>12,600</span> 
+                                                                <span class="font-normal">원</span>
+                                                                <span class="hidden lg:block text-11-l-14 font-normal border-l pl-1 ml-1" style="color: rgba(55, 56, 60, 0.6);">100P</span>
+                                                            </span>                            
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div>
+                                                        <div style="overflow: hidden; 
+                                                        border-top-left-radius: 4px; border-top-right-radius: 8px; 
+                                                        border-bottom-left-radius: 4px; border-bottom-right-radius: 8px;" class="image-slide-new shadow-md mb-3 border">
+                                                            <img class="image-slide-new" src="../assets/images/image/books/book2.png" alt="">
+                                                        </div>
+                                
+                                                        <div class="flex flex-col content-new">
+                                                            <h4 class="text-base font-semibold h-6 overflow-hidden truncate">영원한 도움의 성모</h4>
+                                                            <span class="font-normal inline-block mb-3 mt-1" style="font-size: 13px; line-height: 18px; color: rgba(55, 56, 60, 0.6);height: 18px;">지은이</span>
+                                                            <span class="flex items-center gap-1 text-sm font-semibold">
+                                                                <span style="color: rgba(238, 23, 98, 1);"> <span>10</span>%</span>
+                                                                <span>12,600</span> 
+                                                                <span class="font-normal">원</span>
+                                                                <span class="hidden lg:block text-11-l-14 font-normal border-l pl-1 ml-1" style="color: rgba(55, 56, 60, 0.6);">100P</span>
+                                                            </span>                            
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div>
+                                                        <div style="overflow: hidden; 
+                                                        border-top-left-radius: 4px; border-top-right-radius: 8px; 
+                                                        border-bottom-left-radius: 4px; border-bottom-right-radius: 8px;" class="image-slide-new shadow-md mb-3 border">
+                                                            <img class="image-slide-new" src="../assets/images/image/books/book2.png" alt="">
+                                                        </div>
+                                
+                                                        <div class="flex flex-col content-new">
+                                                            <h4 class="text-base font-semibold h-6 overflow-hidden truncate">영원한 도움의 성모</h4>
+                                                            <span class="font-normal inline-block mb-3 mt-1" style="font-size: 13px; line-height: 18px; color: rgba(55, 56, 60, 0.6);height: 18px;">지은이</span>
+                                                            <span class="flex items-center gap-1 text-sm font-semibold">
+                                                                <span style="color: rgba(238, 23, 98, 1);"> <span>10</span>%</span>
+                                                                <span>12,600</span> 
+                                                                <span class="font-normal">원</span>
+                                                                <span class="hidden lg:block text-11-l-14 font-normal border-l pl-1 ml-1" style="color: rgba(55, 56, 60, 0.6);">100P</span>
+                                                            </span>                            
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div>
+                                                        <div style="overflow: hidden; 
+                                                        border-top-left-radius: 4px; border-top-right-radius: 8px; 
+                                                        border-bottom-left-radius: 4px; border-bottom-right-radius: 8px;" class="image-slide-new shadow-md mb-3 border">
+                                                            <img class="image-slide-new" src="../assets/images/image/books/book2.png" alt="">
+                                                        </div>
+                                
+                                                        <div class="flex flex-col content-new">
+                                                            <h4 class="text-base font-semibold h-6 overflow-hidden truncate">영원한 도움의 성모</h4>
+                                                            <span class="font-normal inline-block mb-3 mt-1" style="font-size: 13px; line-height: 18px; color: rgba(55, 56, 60, 0.6);height: 18px;">지은이</span>
+                                                            <span class="flex items-center gap-1 text-sm font-semibold">
+                                                                <span style="color: rgba(238, 23, 98, 1);"> <span>10</span>%</span>
+                                                                <span>12,600</span> 
+                                                                <span class="font-normal">원</span>
+                                                                <span class="hidden lg:block text-11-l-14 font-normal border-l pl-1 ml-1" style="color: rgba(55, 56, 60, 0.6);">100P</span>
+                                                            </span>                            
+                                                        </div>
+                                                    </div>
+                                                </div>   
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div>
+                                                        <div style="overflow: hidden; 
+                                                        border-top-left-radius: 4px; border-top-right-radius: 8px; 
+                                                        border-bottom-left-radius: 4px; border-bottom-right-radius: 8px;" class="image-slide-new shadow-md mb-3 border">
+                                                            <img class="image-slide-new" src="../assets/images/image/books/book2.png" alt="">
+                                                        </div>
+                                
+                                                        <div class="flex flex-col content-new">
+                                                            <h4 class="text-base font-semibold h-6 overflow-hidden truncate">영원한 도움의 성모</h4>
+                                                            <span class="font-normal inline-block mb-3 mt-1" style="font-size: 13px; line-height: 18px; color: rgba(55, 56, 60, 0.6);height: 18px;">지은이</span>
+                                                            <span class="flex items-center gap-1 text-sm font-semibold">
+                                                                <span style="color: rgba(238, 23, 98, 1);"> <span>10</span>%</span>
+                                                                <span>12,600</span> 
+                                                                <span class="font-normal">원</span>
+                                                                <span class="hidden lg:block text-11-l-14 font-normal border-l pl-1 ml-1" style="color: rgba(55, 56, 60, 0.6);">100P</span>
+                                                            </span>                            
+                                                        </div>
+                                                    </div>
+                                                </div>                                                                          
+                                            </div>
+                                        </div>                                                                                            
+                                    </div>   
+                                    <div class="absolute top-0 left-0 z-10 w-full flex justify-between" style="top: calc(50% - 20px);">
+                                        <button class="new-prev w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md"
+                                            style="transform: translateX(-60px);">
+                                            <i style="font-size: 14px; color: rgba(55, 56, 60, 0.6);" class="fa-solid fa-chevron-left"></i>
+                                        </button>
+                                        <button class="new-next w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md"
+                                            style="transform: translateX(60px);">
+                                            <i style="font-size: 14px; color: rgba(55, 56, 60, 0.6);" class="fa-solid fa-chevron-right"></i>
+                                        </button>
+                                    </div>                                                                                                                          
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="px-20 mt-2 mb-3">
+                            <div class="px-2.5">
+                                <h2 class="text-22-l-30 font-semibold">이벤트</h2>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-16">
+                            <div class="px-2.5">
+                                <div class="relative">                                   
+                                    <div id="new" class="w-full relative overflow-hidden mb-3" style="width: 700px; height: 204px;">
+
+                                        <div class="swiper eventSwiper w-full h-full">
+                                            <div class="swiper-wrapper" >
+                        
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div class="rounded-lg overflow-hidden" style="width: 340px; height: 204px;">
+                                                        <img src="../assets/images/image/pick/mery.png" alt="img">
+                                                    </div>
+                                                </div>   
+                                                
+                                                <div class="swiper-slide flex items-center justify-center">
+                                                    <div class="rounded-lg overflow-hidden" style="width: 340px; height: 204px;">
+                                                        <img src="../assets/images/image/pick/mery.png" alt="img">
+                                                    </div>
+                                                </div>   
+                                                                                                         
+                                            </div>
+                                        </div>                                                                                            
+                                    </div>
+                                    <div class="flex justify-end">
+                                        <div class="p-2">
+                                            <button
+                                                class="event-prev w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-md">
+                                                <i style="font-size: 14px; color: rgba(55, 56, 60, 0.6);"
+                                                    class="fa-solid fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2">
+                                            <button
+                                                class="event-next w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-md">
+                                                <i style="font-size: 14px; color: rgba(55, 56, 60, 0.6);"
+                                                    class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-8">
+                            <div class="px-2.5">
+                                <div class="flex justify-between items-center">
+                                    <div class="text-22-l-30 font-semibold">수도자의 독서노트</div>
+                                    <div class="flex items-center gap-1">
+                                        <div class="text-base font-semibold" style="color: rgba(55, 56, 60, 0.6)">더보기</div>
+                                        <div>
+                                            <img src="../assets/images/icon/home/section-add.svg" alt="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="px-20 mb-16">
+                            <div class="px-2.5">
+                                <div class="">                                    
+                                    <div class="flex gap-4">
+                                        <div style="overflow: hidden; 
+                                        border-top-left-radius: 4px; border-top-right-radius: 8px; 
+                                        border-bottom-left-radius: 4px; border-bottom-right-radius: 8px; width: 102px; height: 150px;" class=" shadow-md border">
+                                            <img class="w-full h-full" src="../assets/images/image/books/book2.png" alt="">
+                                        </div>
+                
+                                        <div class="flex flex-col content-new">
+                                            <h4 class="text-base font-semibold h-6 overflow-hidden truncate">수험생을 위한 묵주의 9일기도</h4>
+                                            <span class="font-normal inline-block mb-3 mt-1" style="font-size: 13px; line-height: 18px; color: rgba(55, 56, 60, 0.6);height: 18px;">김옥순 수녀</span>
+                                            <span class="flex items-center gap-1 text-sm font-semibold">
+                                                <span style="color: rgba(238, 23, 98, 1);"> <span>10</span>%</span>
+                                                <span>12,600</span> 
+                                                <span class="font-normal">원</span>
+                                                <span class="hidden lg:block text-11-l-14 font-normal border-l pl-1 ml-1" style="color: rgba(55, 56, 60, 0.6);">100P</span>
+                                            </span>                            
+                                        </div>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-3">
+                            <div class="px-2.5">
+                                <h2 class="text-22-l-30 font-semibold">카드뉴스</h2>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-16">
+                            <div class="px-2.5">
+                                <div class="relative">                                   
+                                    <div id="new" class="relative overflow-hidden " style="width: 700px;">
+
+                                        <div class="swiper newsSwiper h-full" style="width: 790px;">
+                                            <div class="swiper-wrapper" >
+                        
+                                                <div class="swiper-slide flex items-center justify-center">                                               
+                                                    <div class="scope-imgage  rounded-lg border overflow-hidden" style="width: 250px; height: 250px;">
+                                                        <img class="w-full h-full" src="../assets/images/image/pick/girl.png" alt="">
+                                                    </div>                                                                                                                                                                                                                                                                                                                                       
+                                                </div>                                                                                                                         
+                                                <div class="swiper-slide flex items-center justify-center">                                               
+                                                    <div class="scope-imgage  rounded-lg border overflow-hidden" style="width: 250px; height: 250px;">
+                                                        <img class="w-full h-full" src="../assets/images/image/pick/girl.png" alt="">
+                                                    </div>                                                                                                                                                                                                                                                                                                                                       
+                                                </div>                                                                                                                         
+                                                <div class="swiper-slide flex items-center justify-center">                                               
+                                                    <div class="scope-imgage  rounded-lg border overflow-hidden" style="width: 250px; height: 250px;">
+                                                        <img class="w-full h-full" src="../assets/images/image/pick/girl.png" alt="">
+                                                    </div>                                                                                                                                                                                                                                                                                                                                       
+                                                </div>                                                                                                                         
+                                                
+                                                <div class="swiper-slide flex items-center justify-center">                                               
+                                                    <div class="scope-imgage  rounded-lg border overflow-hidden" style="width: 250px; height: 250px;">
+                                                        <img class="w-full h-full" src="../assets/images/image/pick/girl.png" alt="">
+                                                    </div>                                                                                                                                                                                                                                                                                                                                       
+                                                </div>                                                                                                                         
+                                            </div>
+                                        </div>                                                                                            
+                                    </div> 
+
+                                    <div class="flex justify-end">
+                                        <div class="p-2">
+                                            <button
+                                                class="news-prev w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-md">
+                                                <i style="font-size: 14px; color: rgba(55, 56, 60, 0.6);"
+                                                    class="fa-solid fa-chevron-left"></i>
+                                            </button>
+                                        </div>
+                                        <div class="p-2">
+                                            <button
+                                                class="news-next w-6 h-6 rounded-full bg-white flex items-center justify-center shadow-md">
+                                                <i style="font-size: 14px; color: rgba(55, 56, 60, 0.6);"
+                                                    class="fa-solid fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>                                                                                                                          
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-3">
+                            <div class="px-2.5">
+                                <h2 class="text-22-l-30 font-semibold">유튜브</h2>
+                            </div>
+                        </div>
+
+                        <div class="px-20 mt-2 mb-20">
+                            <div class="px-2.5">
+                                <div style="width: 340px; height: 204px;" class="rounded-lg overflow-hidden">
+                                    <iframe width="340" height="204" src="https://www.youtube.com/embed/3rYL8AHJaTc?si=bQWoRCUM6ku-X7jW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="px-20 mt-1.5 mb-12">
+                            <div class="px-2.5">
+                                <div class="py-6 rounded-xl overflow-hidden px-16" style="background-color: rgba(247, 247, 248, 1);">
+                                    <p class="text-14-l-22 font-normal text-center">
+                                        이 메일은 회원가입 시 안내메일을 받아보시길 동의하셨기에 보내드리는 서비스 메일입니다. <br>
+                                        수신을 원하지 않으시는 분은 로그인 후 [회원정보 수정] 메뉴에서 메일수신거부로 수정해 주십시오.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center py-6" style="background-color: rgba(6, 57, 139, 1);">
+                            <p class="text-14-l-22 font-normal text-center text-white">바오로딸은 사회커뮤니케이션을 통해 하느님의 사랑을 전하고자 하는 성바오로딸수도회 수녀들이 운영하는 출판사입니다. </p>
+                        </div>
+
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section> 
+
+    <section class="h-20"></section>
+
+    <div class="fixed bottom-24 right-6 block sm:hidden z-50 bg-white">
+        <div class="flex flex-col justify-center items-center gap-1 shadow-lg rounded-full" style="width: 56px; height: 56px;">
+            <img src="../assets/images/icon/common/up.svg" alt="">
+            <span class="inline-block text-xs font-semibold">TOP</span>
+        </div>
+    </div>
+
+
+    <div class="fixed bottom-0 left-0 right-0 z-50 flex sm:hidden">
+        <div class="flex items-center w-full">
+            <div class="flex-1 h-16">
+                <div class="w-full flex relative">
+                    <div class="h-16 w-1/2 bg-white" style="border-top-right-radius: 48px; box-shadow: 0 -4px 1px 0 rgba(0, 0, 0, 0.02);"></div>
+                    <div class="h-16 w-1/2 bg-white" style="border-top-left-radius: 48px; box-shadow: 0 -4px 1px 0 rgba(0, 0, 0, 0.02);"></div>
+                    
+                    <div class="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+                        <img style="width: 48px; height: 48px;" src="../assets/images/icon/common/home-choose.svg" alt="icon">
+                    </div>
+                </div>                
+            </div>
+            <div class="flex-1 flex justify-center items-center flex-col py-2.5 gap-1 bg-white" style="box-shadow: 0 -4px 1px 0 rgba(0, 0, 0, 0.02);">
+                <img style="width: 24px; height: 24px;" src="../assets/images/icon/common/search.svg" alt="icon">
+                <span class="text-xs font-medium">검색</span>
+            </div>
+            <div class="flex-1 flex justify-center items-center flex-col py-2.5 gap-1 bg-white" style="box-shadow: 0 -4px 1px 0 rgba(0, 0, 0, 0.02);">
+                <img style="width: 24px; height: 24px;" src="../assets/images/icon/common/person.svg" alt="icon">
+                <span class="text-xs font-medium">마이페이지</span>
+            </div>
+            <div class="flex-1 flex justify-center items-center flex-col py-2.5 gap-1 bg-white" style="box-shadow: 0 -4px 1px 0 rgba(0, 0, 0, 0.02);">
+                <img style="width: 24px; height: 24px;" src="../assets/images/icon/common/person.svg" alt="icon">
+                <span class="text-xs font-medium">최근 본 상품</span>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/main-category/main-category.js"></script>
+
+    <script>
+        var newSwiper = new Swiper(".newSwiper", {
+           slidesPerView: 4,
+           spaceBetween: 20,
+           loop: true,
+           navigation: {
+               nextEl: ".new-next",
+               prevEl: ".new-prev",
+           },
+       });
+        
+       var eventSwiper = new Swiper(".eventSwiper", {
+           slidesPerView: 2,
+           spaceBetween: 20,
+           loop: true,
+           navigation: {
+               nextEl: ".event-next",
+               prevEl: ".event-prev",
+           },
+       });
+       
+       var newsSwiper = new Swiper(".newsSwiper", {
+           slidesPerView: 3,
+           spaceBetween: 20,
+           loop: true,
+           navigation: {
+               nextEl: ".news-next",
+               prevEl: ".news-prev",
+           },
+       });
+   </script>
+
+</body>
+
+</html>

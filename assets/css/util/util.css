@@ -61,6 +61,14 @@ ol li {
     background: linear-gradient(to right, #0C98E7, #B956EA, #F03964);
 }
 
+.bg-header-highlight {
+    background: linear-gradient(to right, #71B0FF, #2C79FE, #7B37FF);
+}
+
+.bg-gray {
+    background-color: rgba(55, 56, 60, 0.28);
+}
+
 .text-highlight-dot::after {
     content: "";
     position: absolute;
@@ -118,6 +126,11 @@ ol li {
     line-height: 24px;
 }
 
+.text-20-l-28 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
 .text-22-l-30 {
     font-size: 22px;
     line-height: 30px;
@@ -169,6 +182,14 @@ ol li {
     /* Thêm dấu "..." nếu văn bản bị cắt */
 }
 
+.four-lines {
+    display: -webkit-box;  
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
 .text-footer {
     font-size: 13px; line-height: 18px; font-weight: 400; color: rgba(55, 56, 60, 0.6);
 }
@@ -181,7 +202,20 @@ ol li {
     overflow: hidden; 
 }
 
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari, Opera */
+    -webkit-overflow-scrolling: touch;
+}
 
+.toggle-menu-size {
+    height: 594px; 
+    max-width: 744px;
+}
+
+.menu-item-size {
+    width: 143px;
+}
 
 @media (max-width:768px) {
     .mobi-px {
@@ -193,7 +227,9 @@ ol li {
         padding-left: 20px;
     }
 
-  
+    .toggle-menu-size {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {

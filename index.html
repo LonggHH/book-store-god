@@ -202,7 +202,7 @@
         </div>
 
         <div class="container-layout">
-            <div id="bookstore-categories" class="flex gap-10">
+            <div id="bookstore-categories" class="flex gap-10 overflow-auto custom-scroll">
                 <!-- <div class="flex flex-col gap-2 w-20">
                     <div class="w-20 h-20 overflow-hidden"><img src="./assets/images/icon/home/hero-cup.svg" alt="icon"></div>
                     <span class="inline-block w-full text-sm font-medium text-center truncate">전례의오솔길</span>
@@ -800,8 +800,8 @@
         </div>
     </section>
 
-    <footer class="py-6">
-        <div class="container-layout px-5 sm:px-0 flex justify-between flex-col sm:flex-row">
+    <footer class="py-6 mb-16">
+        <div class="container-layout px-5 sm:px-0 flex justify-between flex-col sm:flex-row mobi-px">
             <div>
                 <div class="text-base font-medium">고객센터</div>
                 <div class="my-3">
@@ -817,7 +817,7 @@
                     style="background-color: rgba(46, 47, 51, 0.88);">1:1 문의</div>
             </div>
             <!--  -->
-            <div class="px-16 mx-16 border-r border-l hidden sm:flex">
+            <div class="sm:px-2 sm:mx-2 md:px-16 md:mx-16 border-r border-l hidden sm:flex sm:flex-col">
                 <div class="text-base font-medium mb-3">은행계좌 안내</div>
                 <div class="mb-2">
                     <p class="mb-1 text-lg font-semibold">
@@ -889,36 +889,36 @@
             <hr class="mt-6">
         </div>
 
-     
+
         <div class="flex justify-center sm:hidden border-b">
             <ul class="flex">
-                <li class="py-2.5 px-4"> <a class="text-sm font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                        href="#">출판사 소개</a> </li>
-                <li class="py-2.5 px-4"> <a class="text-sm font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                        href="#">이용약관</a> </li>
-                <li class="py-2.5 px-4"> <a class="text-sm font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                        href="#">개인정보 취급방법</a> </li>                    
+                <li class="py-2.5 px-4"> <a class="text-sm font-medium whitespace-nowrap"
+                        style="color: rgba(46, 47, 51, 0.88);" href="#">출판사 소개</a> </li>
+                <li class="py-2.5 px-4"> <a class="text-sm font-medium whitespace-nowrap"
+                        style="color: rgba(46, 47, 51, 0.88);" href="#">이용약관</a> </li>
+                <li class="py-2.5 px-4"> <a class="text-sm font-medium whitespace-nowrap"
+                        style="color: rgba(46, 47, 51, 0.88);" href="#">개인정보 취급방법</a> </li>
             </ul>
         </div>
-      
 
-        <div class="container-layout flex flex-col sm:flex-row flex-wrap py-2.5 px-5 sm:p-0 gap-4 sm:gap-0">            
 
-            <div style="width: 160px; height: 92px;" class="flex items-center justify-center">
+        <div class="container-layout flex flex-col sm:flex-row flex-wrap py-2.5 px-5 sm:px-0 gap-4 sm:gap-0">
+
+            <div style="width: 160px; height: 92px;" class="flex items-center justify-start sm:justify-center">
                 <img style="width: 72px; height: 72px;" src="./assets/images/logo/logo-grey.svg" alt="img">
-            </div>            
+            </div>
 
             <div class="flex-1">
                 <div class="hidden sm:flex justify-between items-center">
                     <ul class="flex">
-                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                                href="#">출판사 소개</a> </li>
-                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                                href="#">이용약관</a> </li>
-                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                                href="#">개인정보 취급방법</a> </li>
-                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap" style="color: rgba(46, 47, 51, 0.88);"
-                                href="#">고객센터</a> </li>
+                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap"
+                                style="color: rgba(46, 47, 51, 0.88);" href="#">출판사 소개</a> </li>
+                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap"
+                                style="color: rgba(46, 47, 51, 0.88);" href="#">이용약관</a> </li>
+                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap"
+                                style="color: rgba(46, 47, 51, 0.88);" href="#">개인정보 취급방법</a> </li>
+                        <li class="p-2.5"> <a class="text-base font-medium whitespace-nowrap"
+                                style="color: rgba(46, 47, 51, 0.88);" href="#">고객센터</a> </li>
                     </ul>
 
                     <div class="gap-3 items-center hidden sm:flex">
@@ -940,20 +940,23 @@
                 <div class="sm:px-2.5">
                     <h4 class="mb-1 text-footer">
                         <span>재단법인 천주교 성바오로딸수도회</span>
-                        <span class="sm:mx-3 sm:px-3 border-l border-r" style="border-color: rgba(55, 56, 60, 0.6);">소재지 : 서울시
+                        <span class="mx-1 px-1 sm:mx-3 sm:px-3 border-l border-r"
+                            style="border-color: rgba(55, 56, 60, 0.6);">소재지 : 서울시
                             강북구 오현로7길 34</span>
                         <span>대표자 : 이은아</span>
                     </h4>
                     <h4 class="mb-1 text-footer">
-                        <span>사업자 등록번호: <span >2108200035</span> <span
+                        <span>사업자 등록번호: <span>2108200035</span> <span
                                 style="color: rgba(0, 191, 64, 1);">사업자정보확인</span></span>
-                        <span class="mx-3 px-3 border-l border-r" style="border-color: rgba(55, 56, 60, 0.6);">통신판매업신고:
-                            제 <span >022</span>호</span>
+                        <span class="mx-1 px-1 sm:mx-3 sm:px-3 border-l border-r"
+                            style="border-color: rgba(55, 56, 60, 0.6);">통신판매업신고:
+                            제 <span>022</span>호</span>
                         <span>개인정보관리책임자: 김경희</span>
                     </h4>
                     <h4 class="mb-1 text-footer">
                         <span>호스팅 제공자: (주)스마일서브</span>
-                        <span class="mx-3 px-3 border-l" style="border-color: rgba(55, 56, 60, 0.6);">E-mail:
+                        <span class="mx-1 px-1 sm:mx-3 sm:px-3 border-l"
+                            style="border-color: rgba(55, 56, 60, 0.6);">E-mail:
                             grace@pauline.or.kr</span>
                     </h4>
                     <p class="text-footer">

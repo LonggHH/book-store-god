@@ -1,0 +1,30 @@
+.video-scope {
+    width: 340px;
+    height: 190px;
+}
+
+.barrier {
+    width: 1px;
+    height: 12px;
+    background-color: rgba(112, 115, 124, 0.16);
+}
+
+
+@media (max-width: 640px) {
+    .video-scope {
+        width: 320px;
+        height: 178px;
+    }
+
+    .barrier {
+        height: 1px;
+        width: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .video-scope {
+        width: 100%;
+        height: 178px;
+    }   
+}

@@ -133,6 +133,11 @@
     height: 200px;
 }
 
+.custom-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+    -webkit-overflow-scrolling: touch;
+  }
+
 @media (max-width: 1024px) {
     .layout-content {
         /* max-width: 878px;  */
